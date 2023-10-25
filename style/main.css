@@ -708,7 +708,7 @@ footer {
 
 .home-footer {
   background-color: var(--blue-color);
-  background-image: url("../../../images/footer-bg.png");
+  background-image: url("../images/footer-bg.png");
   background-position: center center;
   background-size: cover;
 }
