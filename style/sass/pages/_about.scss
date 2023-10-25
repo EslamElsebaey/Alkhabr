@@ -1,0 +1,24 @@
+.about-sec{
+    padding-bottom: 80px;
+    margin-top: 40px;
+}
+.about-content{
+    margin-top: 40px;
+}
+.about-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    img{
+        width: 580px;
+        max-width: 100%;
+    }
+}
+.about-text{
+    color: var(--black-color);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: start;
+}

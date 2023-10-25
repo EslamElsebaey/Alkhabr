@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" href="images/fav.png" type="image/webp" />
+   <link rel="stylesheet" href="style/swiper-bundle.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/line-awesome.min.css">
+ <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/main.css" />
+    <title>My sources</title>
+  </head>
+
+  <body>
+       <!-- preloader -->
+       <div class="preloader">
+        <div class="progress">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+      <!-- end preloader -->
+
+
+
+
+      <!-- header -->
+      <header class="home-header">
+        <div class="container">
+          <div class="main-nav">
+            <div class="header-logo">
+              <a href="home.html">  <img  src="images/logo-light.png" alt=""></a>
+            </div>
+            <div class="search">
+              <div class="search-parent">
+                <input type="text" placeholder="Enter search term">
+                  <i class="las search-icon la-search"></i>
+              </div>
+            </div>
+
+            <div class="control">
+                <div class="myaccount">
+                    <a class="ancor-btn myaccount-anchor" href="myaccount.html">
+                        <i class="las la-user"></i>
+                        My Account
+                    </a>
+                </div>
+              <input
+              type="checkbox"
+              class="darkmode-input"
+              id="darkmode-toggle"
+            >
+            <label for="darkmode-toggle" class="toggle">
+              <span></span>
+            </label>
+            
+            <div class="language">
+            <a class="lang-anchor" href="home.html">العربية</a>
+            </div>
+            <button class=" ancor-btn open-search-btn">
+              <i class="las  la-search"></i>
+            </button>
+            <button class="bars ancor-btn"><i class="las   la-bars"></i></button> 
+         
+            </div>
+
+           
+           
+               
+          </div>
+        </div>
+        <nav>
+          <div class="container">
+            <div class="lang-close-holder-mob">
+              <button class="closeBtn ancor-btn"><i class="las closeIcon la-times"></i></button>
+           </div>
+              <div class="mynav">
+                  <ul class="ul_ee ul-es ul-navbar">
+                    <li><a href="#" class="nav-ancor">Home</a></li>
+                    <li><a href="#" class="nav-ancor">International News</a></li>
+                    <li>
+                        <a href="#" class="nav-ancor">Arabic News</a>
+                      </li>
+                      <li>
+                        <a href="#" class="nav-ancor">Science and Technology</a>
+                      </li>
+                      <li>
+                        <a href="#" class="nav-ancor">Sports</a>
+                      </li>
+                      <li>
+                        <a href="#" class="nav-ancor">Economy</a>
+                      </li>
+                  
+                  
+                  </ul>
+                  <div class="resources-btns-holder">
+                    <a class="add-source-btn myresources-btn ancor-btn" href="myresources.html"> <i class="las la-th-large"></i>My sources </a>
+                    <a class="add-source-btn ancor-btn" href="add-resource.html"> <i class="las la-plus"></i>Add source</a>
+                  
+                  </div>
+                 
+
+              </div>
+          </div>
+         
+          
+        </nav>
+      
+      </header>
+      <!-- end of header -->
+      
+<!-- bottom header -->
+<div class="bottom-header">
+  <div class="container">
+    <div class="bottom-header-content">
+      <a class="ancor-btn myaccount-anchor" href="myaccount.html">
+        <i class="las la-user"></i>
+        My Account
+    </a>
+    <a class="add-source-btn myresources-btn ancor-btn" href="myresources.html"> <i class="las la-th-large"></i>My sources </a>
+    <a class="add-source-btn ancor-btn" href="add-resource.html"> <i class="las la-plus"></i>Add source</a>
+    </div>
+  </div>
+</div>
+<!-- bottom header -->
+
+
+
+<div class="breadcrumb-banner-sec">
+    <section class="banner-950">
+      <div class="container">
+        <a href="#" class="banner">
+          <span>950 * 90</span>
+        </a>
+      </div>
+    </section>
+   
+       <section class="breadcrumb-sec breadcrumb-container">
+      <div class="container">
+        <ol class="breadcrumb">
+            <li class="item-home">
+                <a class="bread-link bread-home" href="index.html">Home</a>
+            </li>
+            <li class="item-home">
+              <a class="bread-link bread-home" href="index.html">Account</a>
+          </li>
+            <li class="active">
+                <span class="bread-current">My sources</span>
+            </li>
+            </ol>
+      </div>
+      </section>  
+  </div>
+
+
+<section class="news myresources">
+    <div class="container">
+        <h3 class="myresources-text">My resources</h3>
+        <div class="myresources-content">
+            <ul class="nav nav-tabs">
+              <li class="active">
+                <a class="active" data-toggle="tab" href="#details1">
+                    <img src="images/resources-inactive/globe.png" alt="">
+                    <span class="news-type-name">International News</span>
+                </a>
+              </li>
+              <li>
+                <a  data-toggle="tab" href="#details2">
+                    <img src="images/resources-inactive/mosque.png" alt="">
+                    <span class="news-type-name">Arabic news</span>
+                </a>
+              </li>
+              <li>
+                <a  data-toggle="tab" href="#details3">
+                    <img src="images/resources-inactive/tech.png" alt="">
+                    <span class="news-type-name">Science and Technology</span>
+                </a>
+              </li>
+              <li>
+                <a  data-toggle="tab" href="#details4">
+                    <img src="images/resources-inactive/football.png" alt="">
+                    <span class="news-type-name">Sports</span>
+                </a>
+              </li>
+              <li>
+                <a  data-toggle="tab" href="#details5">
+                    <img src="images/resources-inactive/economy.png" alt="">
+                    <span class="news-type-name">Economy</span>
+                </a>
+              </li>
+            </ul>
+             <div class="tab-content">
+                <div id="details1" class="tab-pane fade in active show">
+                    <div class="myresources-country">
+                        <div class="myresources-country-name">
+                            Saudi Arabia
+                            </div>
+                            <div class="resources-newspaper-items">
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/01.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/02.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/01.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/03.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/04.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/01.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/01.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="myresources-country">
+                        <div class="myresources-country-name">
+                            الإمارات
+                        </div>
+                        <div class="resources-newspaper-items">
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/03.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Emirates Today</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/04.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Union</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/03.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Emirates Today</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/04.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Union</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/03.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Emirates Today</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/04.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Union</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/03.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Emirates Today</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="myresources-country">
+                        <div class="myresources-country-name">
+                            مصر
+                        </div>
+                        <div class="resources-newspaper-items">
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/02.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Today's Electronic News</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/02.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Al-Ahram Gate</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/01.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Today's Electronic News</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/03.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Al-Ahram Gate</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/04.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Today's Electronic News</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/01.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Al-Ahram Gate</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/01.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Today's Electronic News</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="details2" class="tab-pane fade">
+                    <div class="myresources-country">
+                        <div class="myresources-country-name">
+                            Saudi Arabia
+                        </div>
+                        <div class="resources-newspaper-items">
+                        <div class="resources-newspaper-item">
+                            <img src="images/resources/01.jpg" alt="">
+                            <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                            <div class="followers-div">
+                                <span class="followers-num">130481</span>
+                                <span class="followers-text">Follower</span>
+                            </div>
+                            <button class="ancor-btn unfollow-btn follow-btn-active">
+                                <i class="las follow-btn-icon la-user-minus"></i>
+                                <span class="follow-btn-text">Unfollow</span>
+                            </button>
+                        </div>
+                        <div class="resources-newspaper-item">
+                            <img src="images/resources/02.jpg" alt="">
+                            <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                            <div class="followers-div">
+                                <span class="followers-num">130481</span>
+                                <span class="followers-text">Follower</span>
+                            </div>
+                            <button class="ancor-btn unfollow-btn follow-btn-active">
+                                <i class="las follow-btn-icon la-user-minus"></i>
+                                <span class="follow-btn-text">Unfollow</span>
+                            </button>
+                        </div>
+                        <div class="resources-newspaper-item">
+                            <img src="images/resources/01.jpg" alt="">
+                            <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                            <div class="followers-div">
+                                <span class="followers-num">130481</span>
+                                <span class="followers-text">Follower</span>
+                            </div>
+                            <button class="ancor-btn unfollow-btn follow-btn-active">
+                                <i class="las follow-btn-icon la-user-minus"></i>
+                                <span class="follow-btn-text">Unfollow</span>
+                            </button>
+                        </div>
+                        <div class="resources-newspaper-item">
+                            <img src="images/resources/03.jpg" alt="">
+                            <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                            <div class="followers-div">
+                                <span class="followers-num">130481</span>
+                                <span class="followers-text">Follower</span>
+                            </div>
+                            <button class="ancor-btn unfollow-btn follow-btn-active">
+                                <i class="las follow-btn-icon la-user-minus"></i>
+                                <span class="follow-btn-text">Unfollow</span>
+                            </button>
+                        </div>
+                        <div class="resources-newspaper-item">
+                            <img src="images/resources/04.jpg" alt="">
+                            <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                            <div class="followers-div">
+                                <span class="followers-num">130481</span>
+                                <span class="followers-text">Follower</span>
+                            </div>
+                            <button class="ancor-btn unfollow-btn follow-btn-active">
+                                <i class="las follow-btn-icon la-user-minus"></i>
+                                <span class="follow-btn-text">Unfollow</span>
+                            </button>
+                        </div>
+                        <div class="resources-newspaper-item">
+                            <img src="images/resources/01.jpg" alt="">
+                            <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                            <div class="followers-div">
+                                <span class="followers-num">130481</span>
+                                <span class="followers-text">Follower</span>
+                            </div>
+                            <button class="ancor-btn unfollow-btn follow-btn-active">
+                                <i class="las follow-btn-icon la-user-minus"></i>
+                                <span class="follow-btn-text">Unfollow</span>
+                            </button>
+                        </div>
+                        <div class="resources-newspaper-item">
+                            <img src="images/resources/01.jpg" alt="">
+                            <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                            <div class="followers-div">
+                                <span class="followers-num">130481</span>
+                                <span class="followers-text">Follower</span>
+                            </div>
+                            <button class="ancor-btn unfollow-btn follow-btn-active">
+                                <i class="las follow-btn-icon la-user-minus"></i>
+                                <span class="follow-btn-text">Unfollow</span>
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="details3" class="tab-pane fade">
+                    <div class="myresources-country">
+                        <div class="myresources-country-name">
+                            الإمارات
+                        </div>
+                        <div class="resources-newspaper-items">
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/03.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Emirates Today</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/04.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Union</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/03.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Emirates Today</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/04.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Union</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/03.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Emirates Today</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/04.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Union</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/03.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Emirates Today</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="myresources-country">
+                        <div class="myresources-country-name">
+                            مصر
+                        </div>
+                        <div class="resources-newspaper-items">
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/02.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Today's Electronic News</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/02.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Al-Ahram Gate</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/01.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Today's Electronic News</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/03.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Al-Ahram Gate</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/04.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Today's Electronic News</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/01.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Al-Ahram Gate</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/01.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Today's Electronic News</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="details4" class="tab-pane fade">
+                    <div class="myresources-country">
+                        <div class="myresources-country-name">
+                            Emirates
+                        </div>
+                        <div class="resources-newspaper-items">
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/03.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Emirates Today</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/04.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Union</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/03.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Emirates Today</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/04.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Union</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/03.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Emirates Today</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/04.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Union</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/03.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Emirates Today</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="myresources-country">
+                        <div class="myresources-country-name">
+                            مصر
+                        </div>
+                        <div class="resources-newspaper-items">
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/02.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Today's Electronic News</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/02.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Al-Ahram Gate</h3>
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/01.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Today's Electronic News</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/03.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Al-Ahram Gate</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/04.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Today's Electronic News</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/01.jpg" alt="">
+                               <h3 class="resources-newspaper-title">Al-Ahram Gate</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                            <div class="resources-newspaper-item">
+                                <img src="images/resources/01.jpg" alt="">
+                                <h3 class="resources-newspaper-title">Today's Electronic News</h3>
+        
+                                <div class="followers-div">
+                                    <span class="followers-num">130481</span>
+                                    <span class="followers-text">Follower</span>
+                                </div>
+                                <button class="ancor-btn unfollow-btn follow-btn-active">
+                                    <i class="las follow-btn-icon la-user-minus"></i>
+                                    <span class="follow-btn-text">Unfollow</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="details5" class="tab-pane fade">
+                    <div class="myresources-country">
+                        <div class="myresources-country-name">
+                            Saudi Arabia
+                        </div>
+                        <div class="resources-newspaper-items">
+                        <div class="resources-newspaper-item">
+                            <img src="images/resources/01.jpg" alt="">
+                            <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                            <div class="followers-div">
+                                <span class="followers-num">130481</span>
+                                <span class="followers-text">Follower</span>
+                            </div>
+                            <button class="ancor-btn unfollow-btn follow-btn-active">
+                                <i class="las follow-btn-icon la-user-minus"></i>
+                                <span class="follow-btn-text">Unfollow</span>
+                            </button>
+                        </div>
+                        <div class="resources-newspaper-item">
+                            <img src="images/resources/02.jpg" alt="">
+                            <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                            <div class="followers-div">
+                                <span class="followers-num">130481</span>
+                                <span class="followers-text">Follower</span>
+                            </div>
+                            <button class="ancor-btn unfollow-btn follow-btn-active">
+                                <i class="las follow-btn-icon la-user-minus"></i>
+                                <span class="follow-btn-text">Unfollow</span>
+                            </button>
+                        </div>
+                        <div class="resources-newspaper-item">
+                            <img src="images/resources/01.jpg" alt="">
+                            <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                            <div class="followers-div">
+                                <span class="followers-num">130481</span>
+                                <span class="followers-text">Follower</span>
+                            </div>
+                            <button class="ancor-btn unfollow-btn follow-btn-active">
+                                <i class="las follow-btn-icon la-user-minus"></i>
+                                <span class="follow-btn-text">Unfollow</span>
+                            </button>
+                        </div>
+                        <div class="resources-newspaper-item">
+                            <img src="images/resources/03.jpg" alt="">
+                            <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                            <div class="followers-div">
+                                <span class="followers-num">130481</span>
+                                <span class="followers-text">Follower</span>
+                            </div>
+                            <button class="ancor-btn unfollow-btn follow-btn-active">
+                                <i class="las follow-btn-icon la-user-minus"></i>
+                                <span class="follow-btn-text">Unfollow</span>
+                            </button>
+                        </div>
+                        <div class="resources-newspaper-item">
+                            <img src="images/resources/04.jpg" alt="">
+                            <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                            <div class="followers-div">
+                                <span class="followers-num">130481</span>
+                                <span class="followers-text">Follower</span>
+                            </div>
+                            <button class="ancor-btn unfollow-btn follow-btn-active">
+                                <i class="las follow-btn-icon la-user-minus"></i>
+                                <span class="follow-btn-text">Unfollow</span>
+                            </button>
+                        </div>
+                        <div class="resources-newspaper-item">
+                            <img src="images/resources/01.jpg" alt="">
+                            <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                            <div class="followers-div">
+                                <span class="followers-num">130481</span>
+                                <span class="followers-text">Follower</span>
+                            </div>
+                            <button class="ancor-btn unfollow-btn follow-btn-active">
+                                <i class="las follow-btn-icon la-user-minus"></i>
+                                <span class="follow-btn-text">Unfollow</span>
+                            </button>
+                        </div>
+                        <div class="resources-newspaper-item">
+                            <img src="images/resources/01.jpg" alt="">
+                            <h3 class="resources-newspaper-title">Al-Youm Saudi newspaper</h3>
+                            <div class="followers-div">
+                                <span class="followers-num">130481</span>
+                                <span class="followers-text">Follower</span>
+                            </div>
+                            <button class="ancor-btn unfollow-btn follow-btn-active">
+                                <i class="las follow-btn-icon la-user-minus"></i>
+                                <span class="follow-btn-text">Unfollow</span>
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+   
+
+
+
+</section>
+
+
+
+
+
+<footer class="home-footer">
+    <div class="container">
+      <div class="logo-social">
+        <img class="footer-logo" src="images/logo-dark.png" alt="">
+        <div class="social">
+          <a class="social-anchor" href="#"><i class=" social-icon lab la-instagram"></i></a>
+          <i class=""></i>
+          <a class="social-anchor" href="#"><i class="fa-brands social-icon fa-x-twitter"></i></a>
+          <a class="social-anchor" href="#"><i class="lab la-facebook-f  social-icon"></i></a>
+        </div>
+      </div>
+        <div class="footer-cont">
+          <span class="download-text">Download  AlKhabr Application</span>
+          <div class="download-images">
+            <a href="#"> <img src="images/android_link.png" alt=""></a>
+           <a href="#"> <img src="images/itunes_link.png" alt=""></a>
+          </div>
+          <p class="copyright">
+              AlKhabr website. All rights reserved © 2023
+              <span>
+                  - Design and development <a href="#"> <img src="images/tasawk-en-light.png" alt=""></a>
+              </span>
+             </p>
+         <div class="links">
+          <a href="#" class="link">About us</a>
+          <a href="#" class="link">Contact Us</a>
+         </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+<button class="toTop ancor-btn ">
+    <i class="las toTop-icon la-angle-up"></i>
+</button>
+  
+
+
+
+
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script> 
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

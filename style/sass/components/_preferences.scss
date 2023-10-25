@@ -1,0 +1,202 @@
+
+.preferences-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 5px;
+}
+.country-option{
+    display: flex;
+    align-items: center;
+    .country-name{
+        color: var(--blue-color);
+        font-size: 14px;
+        font-weight: 600;
+    }
+    img{
+        width: 28px;
+        margin-inline-end: 16px;
+    }
+}
+.checkbox-label {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding: 9px 15px 8px 15px;
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+
+
+  .checkmark{
+    width: 24px;
+    height: 24px;
+    background-color: var(--check-mark-bgColor);
+    border-radius: 50%;
+    position: absolute;
+    inset-inline-end: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    // display: inline-block;
+    &::after{
+        content: "";
+        position: absolute;
+        // display: none;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        width: 7px;
+        height: 13px;
+        border: solid #fff;
+        border-width: 0 3px 3px 0;
+    }
+    
+}
+
+.checkbox-label input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .checkbox-label input{
+    &:checked + .checkmark{
+        background-color: var(--red-color);
+    }
+  }
+   
+.continue-btn{
+width: 315px;
+height: 48px;
+max-width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 24px;
+background-color: var(--continue-bgColor);
+color: #fff;
+font-size: 16px;
+pointer-events: none;
+cursor: not-allowed;
+
+font-weight: 700;
+margin: 30px auto 0 auto;
+transition: all ease-in-out .1s;
+&:hover{
+    color : #fff;
+    opacity: .7;
+}
+
+}
+
+  .checkbox-label:has(input:checked){
+    border-color: var(--red-color);
+  }
+
+  .setPreferences-footer{
+    margin-top: 50px;
+  }
+
+  .add-resource-sec:has(input:checked) .continue-btn , .field-preferences-sec:has(input:checked) .continue-btn ,  .country-preferences-sec:has(input:checked) .continue-btn{
+    background-color: var(--red-color);
+    pointer-events: painted;
+    cursor: pointer;
+  }
+
+
+
+ .field-preferences-sec .checkbox-label:has(input:checked) .country-option img{
+    filter:  brightness(0) saturate(100%) invert(17%) sepia(82%) saturate(3695%) hue-rotate(347deg) brightness(85%) contrast(103%);
+  }
+
+ 
+
+
+
+.preferences-title{
+    color: var(--blue-color);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.choosed-countries{
+    .choosed-country-close{
+        font-size: 14px;
+        color: var(--choosed-country-icon);
+        cursor: pointer;
+    }
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    .add-source-btn i{
+        margin-inline-start: 5px;
+        margin-inline-end: 0;
+    }
+    .choosed-country{
+        // margin-inline-end: 10px;
+        display: flex;
+        align-items: center;
+        padding: 9px;
+        justify-content: space-between;
+        // min-width: 112px;
+        height: 40px;
+        border-radius: 20px;
+        border: 2px solid var(--border-color);
+        img{
+            width: 24px;
+        }
+        .choosed-country-name{
+            color: var(--blue-color);
+            font-size: 12px;
+            font-weight: 700;
+            margin:  0 7px;
+        }
+    }
+}
+
+
+@include max-768 {
+  .country-option img{
+    width: 24px;
+  }
+  .choosed-countries{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .preferences-parent{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .continue-btn{
+    width: 260px;
+  }
+  .preferences-title{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width : 450px) {
+  .preferences-parent{
+    grid-template-columns: 1fr;
+  }
+}

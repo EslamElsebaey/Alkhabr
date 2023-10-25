@@ -1,0 +1,327 @@
+
+
+// variables
+
+:root{
+  --red-color : #CF141D ;
+  --blue-color :#143C6D;
+  --input-bg-color : #F1F1F1 ;
+  --white-color : #fff ;
+  --black-color : #000;
+  --gray-text-color : #9B9B9B ; 
+  --input-text-color : #505050 ;
+  --input-placeholder-color : #B8B8B8 ;
+  --input-icons-color :  #9093A3;
+  --check-mark-bgColor : #E2E2E2;
+  --border-color :#E4E4E4 ;
+  --continue-bgColor : #B4B4B4;
+  --lang-color : #808080 ;
+  --nav-border-color : #ECECEC;
+  --post-boxshadow : #00000029;
+  --banner-sec-bg : #F5F5F5;
+  --banner-bg : #E6E6E6;
+  --choosed-country-icon : #4A4A4A ;
+  --myresources-btn-color : #E7EDF5 ;
+  --light-border-color : #f2f2f2 ;
+  --account-dep-bgColor :#F3F6FA ;
+  --overlay-bgColor : #888888 ;
+  --delete-acc-bgColor : #EBEBEB ;
+  --profile-img-bgColor : #D1DCEB ;
+  --gradient-red-bgColor : #CF141D0D ;
+  --comment-text-color : #666666 ;
+  --search-allresources-btnBgColor : #F6F6F6 ;
+}
+
+
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  .home-footer{
+    background-color: #1e1e1e;
+  }
+  --banner-sec-bg : #2b2b2b;
+  --banner-bg : #484848;
+  --nav-border-color : #464646;
+
+  --border-color : #5d5d5d ;
+  //   --red-color : #CF141D ;
+    --blue-color : #fff;
+  //   --input-bg-color : #F1F1F1 ;
+    --white-color : #1e1e1e ;
+  //   --gray-text-color : #9B9B9B ; 
+  //   --input-text-color : #505050 ;
+    --check-mark-bgColor : #4d4d4d;
+  //   --continue-bgColor : #2A2A2A;
+  --post-boxshadow : rgba(255, 255, 255, 0.1);
+  
+}
+
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--white-color);
+  font-family: 'Bahij TheSansArabic' ;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+  &:focus , &:hover{
+    text-decoration: none;
+  }
+}
+
+
+
+// bread crump 
+
+.breadcrumb-sec{
+  padding:5px 0  0px 0 ;
+}
+
+.item-home::after{
+  content: " / ";
+  padding: 0 5px;
+  color: var(--gray-text-color);
+}
+.breadcrumb{
+  background-color: transparent;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 0;
+  row-gap: 4px;
+ 
+}
+
+
+
+
+.bread-link{
+  transition: all linear .2s;
+  &:hover{
+      color: var(--red-color);
+  }
+}
+
+ol.breadcrumb li a, ol.breadcrumb li span, ol.breadcrumb li {
+  transition: all 0.2s linear;
+  text-transform: capitalize;
+  font-size: 12px;
+  color: var(--gray-text-color);
+  font-weight: 600;
+  text-decoration: none ;
+}
+
+//end of  bread crump 
+
+
+
+
+img {
+  image-rendering: -webkit-optimize-contrast ;
+}
+
+.ul-es {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.fixed{
+  position: fixed ;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  box-shadow: 0px 0px 17px 0px rgb(0 0 0 / 11%);
+  background-color: var(--white-color);
+  transition: all linear .5s;
+}
+
+
+.showToTop{
+  opacity: 1;
+  visibility: visible;
+}
+
+.stayTop {
+  top: -150px;
+  transition: all linear .5s;
+}
+
+
+
+
+.ancor-btn {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+  &:hover{
+    text-decoration: none;
+    color: black;
+  }
+  &:focus{
+    text-decoration: none;
+    outline: none;
+  }
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:  var(--blue-color);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #E2E2E2;
+}
+/*preloader*/
+.preloader {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.progress {
+  position: fixed;
+  z-index: 222000;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background-color: var(--black-color);
+  background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
+  background-repeat: repeat-x;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+  overflow: hidden;
+}
+
+.progress-bar {
+  animation: progress 6s ease infinite;
+  padding: 1px;
+  background-color: var(--blue-color);
+}
+@keyframes progress {
+  from {
+    width: 0;
+    color: rgba(255, 255, 255, 0);
+  }
+  to {
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+/*preloader*/
+
+
+// back-up
+.toTop{
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0 0 12px rgba(0,0,0,0.15));
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 20;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all linear .3s;
+  opacity: 0;
+  visibility: hidden;
+  &:hover{
+      background-color: #143C6D;
+      .toTop-icon{
+        color:#fff;
+      }
+  }
+  .toTop-icon{
+      font-size: 20px;
+      color: #143C6D;
+      transition: all linear .2s;
+  }
+}
+
+.showToTop{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+// fixed whatsapp
+
+
+
+
+@include min-1200{
+  .container, .container-lg, .container-md, .container-sm, .container-xl{
+    max-width: 1170px;
+  }
+}
+
+@include max-768 {
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .toTop{
+    bottom: 60px;
+    right: 10px;
+  }
+
+  .setToTop{
+    bottom: 10px;
+    right: 10px;
+  }
+  
+ 
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
