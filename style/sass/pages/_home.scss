@@ -330,6 +330,7 @@ html[dir="ltr"]{
         align-items: center;
         &:hover{
         color: var(--gray-text-color);
+        background-color: var(--gradient-red-bgColor);
         }
     }
     a.next , a.prev{

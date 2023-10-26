@@ -1854,6 +1854,7 @@ html[dir=ltr] .myaccount-anchor {
 }
 .pagination-sec-parent a:hover {
   color: var(--gray-text-color);
+  background-color: var(--gradient-red-bgColor);
 }
 .pagination-sec-parent a.next, .pagination-sec-parent a.prev {
   font-size: 16px;
