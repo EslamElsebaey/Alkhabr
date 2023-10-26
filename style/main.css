@@ -1864,6 +1864,10 @@ html[dir=ltr] .myaccount-anchor {
   color: #fff;
 }
 
+html[dir=ltr] .post-item .post-title {
+  line-height: 1.4;
+}
+
 .followers-div {
   display: flex;
   align-items: center;

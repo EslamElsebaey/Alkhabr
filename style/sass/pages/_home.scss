@@ -342,6 +342,12 @@ html[dir="ltr"]{
     }
 }
 
+html[dir="ltr"]{
+    .post-item .post-title{
+        line-height: 1.4;
+    }
+}
+
 
 .followers-div{
     display: flex;
