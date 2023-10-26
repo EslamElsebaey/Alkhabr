@@ -260,7 +260,7 @@ $(".select2-selection").click(function(){
  })
 
  // cancel search 
-$('.inquiry-form select').select2({
+$('.contact select').select2({
   minimumResultsForSearch: -1
 });
 }
