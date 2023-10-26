@@ -1607,6 +1607,7 @@ nav {
   font-weight: 700;
   margin: 0;
   margin-bottom: 5px;
+  transition: ease-in-out 0.2s color;
 }
 .post-item .img-holder {
   overflow: hidden;
@@ -1620,6 +1621,9 @@ nav {
 }
 .post-item:hover .img-holder img {
   transform: scale(1.1);
+}
+.post-item:hover .post-title {
+  color: var(--red-color);
 }
 .post-item .post-desc {
   padding: 11px 14px;

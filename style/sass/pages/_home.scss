@@ -79,6 +79,7 @@
         font-weight: 700;
         margin: 0;
         margin-bottom: 5px;
+        transition: ease-in-out .2s color; 
     }
     .img-holder{
         overflow: hidden;
@@ -94,6 +95,10 @@
         .img-holder img {
             transform: scale(1.1);
         }
+        .post-title{
+            color: var(--red-color);
+        }
+        
     }
     .post-desc{
         padding: 11px 14px;
