@@ -25,7 +25,7 @@
     color : #fff;
     font-size: 12px;
     font-weight: 700;
-    background-color: var(--blue-color);
+    background-color: #143C6D;
     border-radius: 18px;
     // margin-top: 20px;
 }
@@ -119,6 +119,15 @@
     }
     .myresources-content .nav-tabs{
         gap: 7px;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+   .myresources-content .nav-tabs li a span{
+    white-space: nowrap;
     }
 }
 

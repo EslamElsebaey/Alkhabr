@@ -95,15 +95,20 @@ color: #fff;
 font-size: 16px;
 pointer-events: none;
 cursor: not-allowed;
-
 font-weight: 700;
-margin: 30px auto 0 auto;
+// margin: 30px auto 0 auto;
 transition: all ease-in-out .1s;
 &:hover{
     color : #fff;
     opacity: .7;
 }
 
+}
+
+.continue-btn-div{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }
 
   .checkbox-label:has(input:checked){
@@ -177,6 +182,26 @@ transition: all ease-in-out .1s;
 
 
 @include max-768 {
+  
+  .form-page{
+    .continue-btn-div{
+      bottom: 0;
+    }
+  }
+  .add-resource-sec{
+    .continue-btn-div{
+      bottom: 57.8px;
+    }
+  }
+  .continue-btn-div{
+    position: sticky;
+    width: 100%;
+    padding: 8px 0px;
+    background-color: #fff;
+    // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    // border-top: var(--nav-border-color) 1px solid;
+  }
+  
   .country-option img{
     width: 24px;
   }

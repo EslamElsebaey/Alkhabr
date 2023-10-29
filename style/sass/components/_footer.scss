@@ -7,10 +7,10 @@
     flex-direction: column;
 }
 .form-footer{
-    margin-top: 174px;
+    margin-top: 80px;
 }
 footer{
-    padding: 38px 0;
+    padding: 40px 0;
 }
 .download-images{
     display: flex;
@@ -142,6 +142,7 @@ margin-bottom: 10px;
 
 .links .link:first-of-type::after{
     border: 0.5px solid #fff;
+    opacity: .5;
 }
 }
 
@@ -151,8 +152,5 @@ margin-bottom: 10px;
 @include max-768 {
     .home-footer{
         padding-bottom: 80px;
-    }
-    .form-footer{
-        margin-top: 100px;
     }
 }

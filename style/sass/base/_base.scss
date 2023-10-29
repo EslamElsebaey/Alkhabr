@@ -30,29 +30,49 @@
   --gradient-red-bgColor : #CF141D0D ;
   --comment-text-color : #666666 ;
   --search-allresources-btnBgColor : #F6F6F6 ;
+  --sideMenu-bgColor : #143c6d8f ;
 }
 
 
 
+
+
 body.dark-mode {
-  background-color: #1e1e1e;
+  background-color: #1a1a1a;
   .home-footer{
-    background-color: #1e1e1e;
+    background-color: #1a1a1a;
   }
+  --red-color : #CF141D ;
+  --blue-color :#fff;
+  --black-color : #fff;
   --banner-sec-bg : #2b2b2b;
   --banner-bg : #484848;
-  --nav-border-color : #464646;
-
+  // --nav-border-color : #464646;
+  --nav-border-color : #464646ad;
   --border-color : #5d5d5d ;
-  //   --red-color : #CF141D ;
-    --blue-color : #fff;
-  //   --input-bg-color : #F1F1F1 ;
-    --white-color : #1e1e1e ;
-  //   --gray-text-color : #9B9B9B ; 
-  //   --input-text-color : #505050 ;
-    --check-mark-bgColor : #4d4d4d;
-  //   --continue-bgColor : #2A2A2A;
-  --post-boxshadow : rgba(255, 255, 255, 0.1);
+  --blue-color : #fff;
+  --white-color : #1a1a1a ;
+  --check-mark-bgColor : #2A2A2A;
+  --post-boxshadow : rgba(255, 255, 255, 0.1); 
+  --sideMenu-bgColor : #1e1e1ec7 ;
+  --input-bg-color : #484848 ;
+  --account-dep-bgColor :#d6e8ff ;
+  --gray-text-color : #9B9B9B ;
+  // --search-allresources-btnBgColor : #d8d8d8 ;
+  --gradient-red-bgColor : #ffbbbe ;
+  --profile-img-bgColor : #abcfffab ;
+  --choosed-country-icon : #d0d0d0 ;
+  --continue-bgColor : #484848;
+  --light-border-color : #3c3c3c ;
+  // --banner-sec-bg : #F5F5F5;
+  --delete-acc-bgColor : #909090 ;
+  --input-text-color : #fff ;
+  --input-placeholder-color : #B8B8B8 ;
+  --input-icons-color :  #9093A3;
+  --lang-color : #808080 ;
+  --overlay-bgColor : #2b2b2b ;
+  --comment-text-color : #9b9b9b ;
+  // --myresources-btn-color : #d3e6ff ;
   
 }
 
@@ -72,6 +92,7 @@ body.dark-mode {
   box-sizing: border-box;
 }
 body {
+  transition: linear .3s padding-top;
   font-weight: 400;
   font-style: normal;
   background-color: var(--white-color);
@@ -149,9 +170,24 @@ img {
   top: 0;
   left: 0;
   z-index: 50;
-  box-shadow: 0px 0px 17px 0px rgb(0 0 0 / 11%);
   background-color: var(--white-color);
   transition: all linear .5s;
+ 
+}
+
+.fixedHeader-windows{
+  .ul-navbar li .nav-ancor{
+    font-size: 14px;
+  }
+  .header-logo img{
+    width: 60px;
+}
+.main-nav{
+    padding: 5px 0;
+}
+nav{
+    padding: 5px 0;
+}
 }
 
 
@@ -197,7 +233,7 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background:  var(--blue-color);
+  background:  #143C6D;
   border-radius: 15px;
 }
 
@@ -218,7 +254,7 @@ img {
   top: 0;
   width: 100%;
   height: 5px;
-  background-color: var(--black-color);
+  background-color: #fff;
   background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
   background-repeat: repeat-x;
   border-radius: 5px;
@@ -229,7 +265,7 @@ img {
 .progress-bar {
   animation: progress 6s ease infinite;
   padding: 1px;
-  background-color: var(--blue-color);
+  background-color: #143C6D;
 }
 @keyframes progress {
   from {
@@ -246,10 +282,10 @@ img {
 
 // back-up
 .toTop{
-  width: 40px;
-  height: 40px;
-  filter: drop-shadow(0 0 12px rgba(0,0,0,0.15));
-  background-color: #fff;
+  width: 32px;
+  height: 32px;
+  // filter: drop-shadow(0 0 12px rgba(0,0,0,0.15));
+  background: rgba($color: #000000, $alpha: .6);
   display: flex;
   align-items: center;
   position: fixed;
@@ -268,8 +304,8 @@ img {
       }
   }
   .toTop-icon{
-      font-size: 20px;
-      color: #143C6D;
+      font-size: 16px;
+      color: #fff;
       transition: all linear .2s;
   }
 }
@@ -298,13 +334,17 @@ img {
   }
 
   .toTop{
-    bottom: 60px;
+    bottom: 67px;
     right: 10px;
   }
 
   .setToTop{
     bottom: 10px;
     right: 10px;
+  }
+  
+  .setToTop-contin{
+    bottom: 122px;
   }
   
  

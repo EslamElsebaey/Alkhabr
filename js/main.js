@@ -1,14 +1,11 @@
 
-// $(window).load(function(){
-//   $(".preloader").fadeOut();
-// })
-
-
+$(window).on('load', function() {
+  $(".preloader").fadeOut();
+});
 
 
 $(document).ready(function(){
 
-  $(".preloader").fadeOut();
 
 
 
@@ -49,7 +46,7 @@ otpInput.on("keyup", function (e) {
 
 const urgentNews = new Swiper(' .urgent-news .swiper', {
   loop: true,
-  autoplay : true , 
+  // autoplay : true , 
   draggable: true,
   
   pagination: {
@@ -90,6 +87,7 @@ const urgentNews = new Swiper(' .urgent-news .swiper', {
 
 $(".open-search-btn").click(function(){
   $(".search").slideToggle(300);
+  $("body").toggleClass("padding-118")
   $(this).children().toggleClass("la-times");
 })
 
@@ -150,7 +148,15 @@ $(".cancel").click(function(){
 // **************************************************************************************************
 
 
+
+
+
+
+
+
+
 // dark mode 
+
 // let darkmodeInput = $(".darkmode-input"); 
 // let logo = $(".header-logo img");
 
@@ -162,20 +168,20 @@ $(".cancel").click(function(){
 // }
 
 
-// $(darkmodeInput).change(function(){
+// darkmodeInput.change(function(){
 //   $("body").toggleClass("dark-mode") ;
 //  if(this.checked){
 //   localStorage.setItem("dark-mode" , "true") ;
-//   if($("body").hasClass("dark-mode")){
-//     logo.attr("src" , "images/logo-dark.png");
-//   }
+//   logo.attr("src" , "images/logo-dark.png");
 //  }else{
-//   if(!$("body").hasClass("dark-mode")){
-//     logo.attr("src" , "images/logo-light.png");
-//   }
+//   logo.attr("src" , "images/logo-light.png");
 //   localStorage.setItem("dark-mode" , "false") ;
 //  }
 // })
+
+
+
+
 
 
 // **************************************************************************************************
@@ -246,6 +252,11 @@ if($(".bottom-header").length === 0){
   $(".toTop").toggleClass("setToTop");
 }
 
+if($(".continue-btn-div").length !== 0 && $(".home-footer").length !== 0 ){
+  $(".toTop").addClass("setToTop-contin");
+}else{
+  $(".toTop").removeClass("setToTop-contin");
+}
 
 
 // **************************************************************************************************
@@ -310,41 +321,49 @@ $(".toTop").click(function(){
 // **************************************************************************************************
 
 
+// collapse comments
+
+$(".more-btn").click(function(){
+  $(".collapse-comments").toggle(400);
+  $(this).text(function(_, currentText) {
+    return currentText === "عرض القليل من التعليقات" ? "عرض المزيد من التعليقات" : "عرض القليل من التعليقات";
+  });
+})
+
 //fixed nav
+
+if($(".form-header").length > 0){
+  $(window).on("scroll" , function(){
+    $(".form-header").addClass("position-fixed")
+    if($(window).scrollTop() === 0){
+      $(".form-header").removeClass("position-fixed")
+    }
+    
+  })
+}
 
 
 if($(".home-header").length > 0){
   let fixedBar = document.querySelector(".home-header"),
   prevScrollposition = $(window).scrollTop();
   $(window).on("scroll", function () {
-    if($(window).width() < 768){
+    if($(window).width() > 768){
+      $(".home-header").addClass("fixedHeader-windows");
+    }
      
-     if($(document).scrollTop() == 0){
-       $(".search").show()
-     }else{
-       $(".search").hide()
-     }
      if ($(window).scrollTop() > 150) {
          $(".home-header").addClass("fixed");
-         $(".search").addClass("display-none");
-         if($(window).width() < 768){
-           $(".open-search-btn").addClass("display-block") ;
-         } 
-         $(".open-search-btn i").removeClass("la-times") ;
          
      } else {
+      if($(window).width() > 768){
+        $(".home-header").removeClass("fixedHeader-windows");
+      }
          $(".home-header").removeClass("fixed");
-         $(".search").removeClass("display-none");
-         $(".open-search-btn").removeClass("display-block") ;
-        
      }
 
 
      var scrollTop = $(window).scrollTop();
      prevScrollposition < scrollTop && prevScrollposition > 0 ? fixedBar.classList.add("stayTop") : fixedBar.classList.remove("stayTop"), (prevScrollposition = scrollTop);
-
-    }
-
 
     
    });
