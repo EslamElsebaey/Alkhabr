@@ -115,9 +115,7 @@ transition: all ease-in-out .1s;
     border-color: var(--red-color);
   }
 
-  .setPreferences-footer{
-    margin-top: 50px;
-  }
+  
 
   .add-resource-sec:has(input:checked) .continue-btn , .field-preferences-sec:has(input:checked) .continue-btn ,  .country-preferences-sec:has(input:checked) .continue-btn{
     background-color: var(--red-color);

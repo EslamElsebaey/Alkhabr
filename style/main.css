@@ -954,10 +954,6 @@ footer {
   border-color: var(--red-color);
 }
 
-.setPreferences-footer {
-  margin-top: 50px;
-}
-
 .add-resource-sec:has(input:checked) .continue-btn, .field-preferences-sec:has(input:checked) .continue-btn, .country-preferences-sec:has(input:checked) .continue-btn {
   background-color: var(--red-color);
   pointer-events: painted;
@@ -1690,7 +1686,7 @@ nav {
 }
 .post-item .img-holder img {
   width: 100%;
-  height: 125px;
+  height: 154px;
   display: block;
   transition: all ease-in-out 0.2s;
 }
@@ -1847,8 +1843,8 @@ nav {
   font-weight: 300;
 }
 
-.news-list .post-item .img-holder img {
-  height: 154px;
+.swiper-parent .post-item .img-holder img {
+  height: 125px;
 }
 
 .news {
@@ -2584,10 +2580,6 @@ html[dir=ltr] .post-item .post-title {
 .search-results-content .nav-tabs li a.active, .myresources-content .nav-tabs li a.active {
   background-color: var(--red-color);
   color: #fff;
-}
-
-.search-sec .post-item .img-holder img {
-  height: 154px;
 }
 
 @media only screen and (max-width: 767px) {

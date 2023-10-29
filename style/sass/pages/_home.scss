@@ -87,7 +87,7 @@
         width: 100%;
         img{
             width: 100%;
-            height: 125px;
+            height: 154px;
             display: block;
             transition: all ease-in-out .2s;
         }
@@ -245,8 +245,14 @@
     }
 }
 
-.news-list .post-item .img-holder img{
-    height: 154px;
+// .news-list .post-item .img-holder img{
+//     height: 154px;
+// }
+
+.swiper-parent{
+    .post-item .img-holder img{
+        height: 125px;
+    }
 }
 
 .news{
