@@ -315,6 +315,23 @@ header{
           top: 10px !important;
       }
 
+      .position-fixed-top{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        border-color: var(--nav-border-color);
+        .form-header-content .logo img{
+            width: 55px;
+        }
+       .form-header-content{
+        height: 55px;
+       }
+       height: 55px;
+        
+        
+    }
+
 
 @include min-768 {
     .account-btn{
@@ -577,22 +594,7 @@ background-color: #143c6d8f ;
 
 }
 
-.position-fixed{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #fff;
-    border-color: var(--nav-border-color);
-    .form-header-content .logo img{
-        width: 55px;
-    }
-   .form-header-content{
-    height: 55px;
-   }
-   height: 55px;
-    
-    
-}
+
     
 
 

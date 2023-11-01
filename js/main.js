@@ -157,27 +157,27 @@ $(".cancel").click(function(){
 
 // dark mode 
 
-// let darkmodeInput = $(".darkmode-input"); 
-// let logo = $(".header-logo img");
+let darkmodeInput = $(".darkmode-input"); 
+let logo = $(".header-logo img");
 
 
-// if(localStorage.getItem("dark-mode") == "true"){
-//   $("body").addClass("dark-mode") ;
-//   logo.attr("src" , "images/logo-dark.png");
-//   darkmodeInput.prop("checked" , true)
-// }
+if(localStorage.getItem("dark-mode") == "true"){
+  $("body").addClass("dark-mode") ;
+  logo.attr("src" , "images/logo-dark.png");
+  darkmodeInput.prop("checked" , true)
+}
 
 
-// darkmodeInput.change(function(){
-//   $("body").toggleClass("dark-mode") ;
-//  if(this.checked){
-//   localStorage.setItem("dark-mode" , "true") ;
-//   logo.attr("src" , "images/logo-dark.png");
-//  }else{
-//   logo.attr("src" , "images/logo-light.png");
-//   localStorage.setItem("dark-mode" , "false") ;
-//  }
-// })
+darkmodeInput.change(function(){
+  $("body").toggleClass("dark-mode") ;
+ if(this.checked){
+  localStorage.setItem("dark-mode" , "true") ;
+  logo.attr("src" , "images/logo-dark.png");
+ }else{
+  logo.attr("src" , "images/logo-light.png");
+  localStorage.setItem("dark-mode" , "false") ;
+ }
+})
 
 
 
@@ -334,9 +334,9 @@ $(".more-btn").click(function(){
 
 if($(".form-header").length > 0){
   $(window).on("scroll" , function(){
-    $(".form-header").addClass("position-fixed")
+    $(".form-header").addClass("position-fixed-top")
     if($(window).scrollTop() === 0){
-      $(".form-header").removeClass("position-fixed")
+      $(".form-header").removeClass("position-fixed-top")
     }
     
   })

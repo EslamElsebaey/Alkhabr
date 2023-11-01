@@ -1345,6 +1345,21 @@ nav {
   top: 10px !important;
 }
 
+.position-fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  border-color: var(--nav-border-color);
+  height: 55px;
+}
+.position-fixed-top .form-header-content .logo img {
+  width: 55px;
+}
+.position-fixed-top .form-header-content {
+  height: 55px;
+}
+
 @media only screen and (min-width: 768px) {
   .account-btn:hover i {
     color: #fff;
@@ -1560,20 +1575,6 @@ nav {
     align-items: flex-start;
     width: 100%;
     overflow-y: auto;
-  }
-  .position-fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #fff;
-    border-color: var(--nav-border-color);
-    height: 55px;
-  }
-  .position-fixed .form-header-content .logo img {
-    width: 55px;
-  }
-  .position-fixed .form-header-content {
-    height: 55px;
   }
   .bars {
     display: block;
