@@ -374,6 +374,12 @@
 }
 
 
+
+.news-item{
+    width: 100%;
+}
+
+
 @include max-992{
     .post-parent{
         grid-template-columns: 1fr;

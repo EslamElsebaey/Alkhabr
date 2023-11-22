@@ -1664,6 +1664,7 @@ nav {
 }
 
 .post-item {
+  width: 100%;
   position: relative;
   box-shadow: 0px 4px 10px var(--post-boxshadow);
   display: block;
@@ -1680,6 +1681,12 @@ nav {
   margin: 0;
   margin-bottom: 5px;
   transition: ease-in-out 0.2s color;
+  height: 42px;
+  line-height: 1.6;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
 }
 .post-item .img-holder {
   overflow: hidden;
@@ -2486,6 +2493,10 @@ html[dir=ltr] .post-item .post-title {
   flex-direction: column;
   align-items: center;
   row-gap: 20px;
+}
+
+.news-item {
+  width: 100%;
 }
 
 @media only screen and (max-width: 991px) {
