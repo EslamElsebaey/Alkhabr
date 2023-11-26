@@ -7,6 +7,11 @@ $(window).on('load', function() {
 $(document).ready(function(){
 
 
+  $(".bookmark").click(function(){
+    $(this).toggleClass("active");
+  })
+
+
 
 
 // **************************************************************************************************

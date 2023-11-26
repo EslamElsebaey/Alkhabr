@@ -2076,6 +2076,14 @@ html[dir=ltr] .post-item .post-title {
     margin: auto;
   }
 }
+.bookmark.active {
+  background-color: var(--red-color);
+}
+
+.bookmark.active i {
+  color: #fff;
+}
+
 @media only screen and (max-width: 1199px) {
   .news-list-items {
     -moz-column-gap: 20px;

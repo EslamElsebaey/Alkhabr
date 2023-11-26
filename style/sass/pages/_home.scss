@@ -534,6 +534,13 @@ color: var(--red-color);
     }
 }
 
+.bookmark.active{
+    background-color: var(--red-color);
+}
+.bookmark.active i {
+    color: #fff;
+}
+
 
 
 
