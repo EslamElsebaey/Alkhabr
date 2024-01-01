@@ -182,10 +182,15 @@ $(".choosed-country-close").click(function(){
 
 
 $(".bars").click(function(){
-  $(this).children("i").toggleClass("la-times")
-  $("nav").toggleClass("open-nav");  
-  $("body").toggleClass("overflow-hidden") ;
+  $("nav").addClass("open-nav");  
+  $("body").removeClass("overflow-hidden") ;
 })
+
+$(".closeBtn").click(function(){
+  $("nav").removeClass("open-nav");  
+  $("body").removeClass("overflow-hidden") ;
+})
+
 
 
 // $(".bars").click(function(){

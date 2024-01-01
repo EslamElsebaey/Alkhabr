@@ -1439,9 +1439,7 @@ nav {
 }
 
 .open-nav {
-  opacity: 1;
-  visibility: visible;
-  transition: all linear 0.1s;
+  inset-inline-start: 0;
 }
 
 .nav-arrow-rotate::after {
@@ -1625,14 +1623,8 @@ nav {
     padding: 8px 0;
   }
   .mynav {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-inline-start: 15px;
-    padding-inline-end: 10px;
-    background: var(--white-color);
-    border-radius: 5px;
-    margin-top: 0;
     height: 100%;
+    margin-top: 50px;
   }
   .bars i, .open-search-btn i {
     font-size: 24px;
@@ -1657,20 +1649,16 @@ nav {
     transition: all linear 0.3s;
     z-index: 100;
     border: none;
+    inset-inline-start: -100%;
     overflow-y: auto;
     position: fixed;
-    inset: 0;
+    left: 0;
     padding: 0;
     padding: 20px 0;
     width: 100%;
-    height: calc(100% - 65px);
-    opacity: 0;
-    visibility: hidden;
-    top: 104.8px;
-    background-color: rgba(20, 60, 109, 0.5607843137);
-  }
-  nav .container {
-    height: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: #fff;
   }
   nav .ul-navbar {
     height: 100%;
@@ -1694,7 +1682,6 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    display: none;
   }
 }
 .display-block {
