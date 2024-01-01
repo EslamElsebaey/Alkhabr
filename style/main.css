@@ -1759,10 +1759,10 @@ nav {
   display: -webkit-box;
 }
 .urgent-news .post-item .post-title {
-  font-size: 18px;
+  font-size: 17px;
   color: #fff;
   height: unset;
-  line-height: 1.5;
+  line-height: 1.4;
   -webkit-line-clamp: 3;
   overflow: hidden;
   -webkit-box-orient: vertical;
