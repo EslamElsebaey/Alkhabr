@@ -1,6 +1,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* $(".bars").click(function(){
   $(this).children("i").toggleClass("la-times")
   $("nav").toggleClass("open-nav");  
@@ -83,17 +97,17 @@
 }
 
 body{
-    padding-top: 142.6px;
+    padding-top: 183.4px;
 }
 
 @include max-992 {
     body{
-        padding-top: 186.6px;
+        padding-top: 227.4px;
     }
 }
 @include max-768 {
     body{
-        padding-top: 64.8px;
+        padding-top: 105.6px;
     }
 }
 
@@ -110,7 +124,95 @@ header{
 // .home-header{
 //     transition: all linear .3s;
 // }
+
+
+
+// *******************************************************************
+
+// ticker 
  
+.ticker {
+    font-size: 13px;
+    color: #2c2f34; 
+}
+  .myticker-cont{
+    .date-urgent{
+        display: flex;
+        align-items: center;
+    }
+    display: flex;
+    justify-content:space-between;
+   height: 40px;
+    .swiper-parent{
+        width: 81%;
+    }
+    .date{
+        margin-inline-end: 15px;
+        .icon{
+            font-size: 13px;
+            color: #2c2f34;
+            margin-inline-end: 5px;
+
+        }
+    }
+    .date-text{
+        font-size: 13px;
+        color: #2c2f34;
+    }
+
+    align-items: center;
+    .date{
+        display: flex;
+        align-items: center;
+    }
+  }
+
+  .myticker{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after , .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+        display: none;
+    }
+    .swiper-button-next , .swiper-button-prev{
+        width: 20px;
+        height: 20px;
+        border: 1px solid rgba(0,0,0,0.1);
+        top: 50%;
+        transform: translateY(-50%);
+        left: unset;
+        right: unset;
+        margin-top: 0;
+        inset-inline-end: 0;
+        i {
+            color: #2c2f34;
+            font-size: 10px;
+        }
+    }
+    .swiper-button-next{
+        inset-inline-end: 30px;
+
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+        display: none;
+    }
+  }
+  .urgent-news-text{
+    padding: 6px 5px;
+    font-size: 13px;
+    background-color: var(--red-color);
+    color: #fff;
+    font-weight: 300;
+  }
+ 
+
+
+
+
+
+// ****************************************************************************************
+
+
+
+
   
 .language{
     margin-inline-start:  20px;
@@ -365,9 +467,18 @@ header{
     .search-parent{
         width: 370px;
     }
+    .myticker-cont .swiper-parent{
+        width: 75%;
+    }
 }
     
 @include max-992 {
+    .myticker-cont .date{
+        display: none;
+    }
+    .myticker-cont .swiper-parent{
+        width: calc(100% - 85px);
+    }
     .ul-navbar li{
         margin-inline-end: 20px;
     }
@@ -394,6 +505,25 @@ header{
 
 
 @include max-768 {
+    .myticker .swiper-button-next, .myticker .swiper-button-prev{
+        display: none;
+    }
+    .urgent-news-text{
+        padding: 5px;
+        font-size: 11px;
+    }
+    .myticker-cont .swiper-parent{
+        width: calc(100% - 65px);
+    }
+    .ticker{
+        width: 300px;
+        overflow: hidden;
+        font-size: 12px;
+        // white-space: nowrap;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+    }
     .home-header{
         border-bottom: var(--nav-border-color) 1px solid;
     }
