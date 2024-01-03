@@ -6,24 +6,33 @@ $(window).on('load', function() {
 
 $(document).ready(function(){
 
+ 
 
-
-
+  // Ticker News
   
-  $.fn.ticker.defaults = {
-    random:        true, // Whether to display ticker items in a random order
-    itemSpeed:     1500,  // The pause on each ticker item before being replaced
-    cursorSpeed:   20,    // Speed at which the characters are typed
-    pauseOnHover:  true,  // Whether to pause when the mouse hovers over the ticker
-    finishOnHover: true,  // Whether or not to complete the ticker item instantly when moused over
-    cursorOne:     '_',   // The symbol for the first part of the cursor
-    cursorTwo:     '_',   // The symbol for the second part of the cursor
-    fade:          true,  // Whether to fade between ticker items or not
-    fadeInSpeed:   500,   // Speed of the fade-in animation
-    fadeOutSpeed:  500    // Speed of the fade-out animation
-  };
+    var $breakingNews = jQuery('.breaking-news');
+  
+    if ( $breakingNews.length ){
+      $breakingNews.each(function(){
+        var $this = jQuery(this);
+        if( $this.find('li').length ){
+          let dir = document.dir;
+          $this.ticker({
+            speed       : .2,
+            pauseOnItems : ( $this.data('speed') ) ? $this.data('speed') : 2000,
+            fadeInSpeed  : 600,
+            fadeOutSpeed : 300,
+            controls    : ( $this.data('arrows') ) ? true : false,
+            direction   : dir ,
+            displayType : ( $this.data('type') ) ? $this.data('type') : 'reveal',
+          });
+        }
+      });
+    }
+ 
+  
 
-  $('.ticker').ticker($.fn.ticker.defaults);
+
 
 
   $(".bookmark").click(function(){
@@ -87,64 +96,11 @@ const urgentNews = new Swiper(' .urgent-news .swiper', {
       slidesPerView: 1,
       spaceBetween: 15
     },
-    // 768: {
-    //   slidesPerView: 2,
-    //   spaceBetween: 15
-    // } , 
-    // 992: {
-    //   slidesPerView: 3,
-    //   spaceBetween: 20
-    // } , 
-    // 1199: {
-    //   slidesPerView: 4,
-    //   spaceBetween: 15
-    // }
+    
   }
 });
 
 
-// *******************************************************
-
-// ticker swiper
-
-
-const tickerSwiper = new Swiper(' .myticker .swiper', {
-  loop: true,
-  // autoplay : true , 
-  draggable: true,
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
-  
-  pagination: {
-    el: '.myticker .swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.myticker .swiper-button-next ',
-    prevEl: '.myticker .swiper-button-prev',
-  },
-  breakpoints: {
-  
-    350: {
-      slidesPerView: 1,
-      // spaceBetween: 15
-    },
-    // 768: {
-    //   slidesPerView: 2,
-    //   spaceBetween: 15
-    // } , 
-    // 992: {
-    //   slidesPerView: 3,
-    //   spaceBetween: 20
-    // } , 
-    // 1199: {
-    //   slidesPerView: 4,
-    //   spaceBetween: 15
-    // }
-  }
-});
 
 
 // **************************************************************************************************
@@ -174,11 +130,6 @@ $(".choosed-country-close").click(function(){
   $(this).parent().hide();
 })
 
-// $(".closeBtn").click(function(){
-//   $("nav").removeClass("open-nav");
-//   $("body").removeClass("overflow-hidden") ;
-
-// })
 
 
 $(".bars").click(function(){
@@ -187,6 +138,7 @@ $(".bars").click(function(){
 })
 
 $(".closeBtn").click(function(){
+  console.log(10)
   $("nav").removeClass("open-nav");  
   $("body").removeClass("overflow-hidden") ;
 })

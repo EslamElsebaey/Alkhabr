@@ -167,10 +167,10 @@
         }
     }
     .swiper-button-prev, .swiper-rtl .swiper-button-next{
-        inset-inline-end: -60px;
+        left: -60px;
     }
     .swiper-button-next, .swiper-rtl .swiper-button-prev{
-        inset-inline-start: -60px;
+        right: -60px;
 
     }
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{

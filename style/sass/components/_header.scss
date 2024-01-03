@@ -129,118 +129,11 @@ header{
 
 // *******************************************************************
 
-// ticker 
- 
-.ticker {
-    font-size: 13px;
-    color: #2c2f34; 
-}
-  .myticker-cont{
-    .date-urgent{
-        display: flex;
-        align-items: center;
-    }
-    display: flex;
-    justify-content:space-between;
-   height: 40px;
-    .swiper-parent{
-        width: 81%;
-    }
-    .date{
-        margin-inline-end: 15px;
-        .icon{
-            font-size: 13px;
-            color: #2c2f34;
-            margin-inline-end: 5px;
-
-        }
-    }
-    .date-text{
-        font-size: 13px;
-        color: #2c2f34;
-    }
-
-    align-items: center;
-    .date{
-        display: flex;
-        align-items: center;
-    }
-  }
-
-  .myticker{
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after , .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-        display: none;
-    }
-    .swiper-button-next , .swiper-button-prev{
-        width: 20px;
-        height: 20px;
-        border: 1px solid rgba(0,0,0,0.1);
-        top: 50%;
-        transform: translateY(-50%);
-        left: unset;
-        right: unset;
-        margin-top: 0;
-        inset-inline-end: 0;
-        i {
-            color: #2c2f34;
-            font-size: 10px;
-        }
-    }
-    .swiper-button-next{
-        inset-inline-end: 30px;
-
-    }
-    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-        display: none;
-    }
-  }
-  .urgent-news-text{
-    padding: 6px 5px;
-    font-size: 13px;
-    background-color: var(--red-color);
-    color: #fff;
-    font-weight: 300;
-  }
- 
 
 
-  @include max-1200{
-  .myticker-cont .swiper-parent{
-    width: 75%;
-}
-}
 
-  @include max-992 {
-    .myticker-cont .date{
-        display: none;
-    }
-    .myticker-cont .swiper-parent{
-        width: calc(100% - 85px);
-    }
-  }
-@include max-768 {
-    .myticker .swiper-button-next, .myticker .swiper-button-prev{
-        display: none;
-    }
-    .urgent-news-text{
-        padding: 5px;
-        font-size: 11px;
-    }
-    .myticker-cont .swiper-parent{
-        width: calc(100% - 65px);
-    }
-    .ticker{
-        width: 300px;
-        overflow: hidden;
-        font-size: 12px;
-        // white-space: nowrap;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
-        display: -webkit-box;
-    }
-}
   
+
 
 
 
@@ -471,6 +364,233 @@ header{
     }
 
 
+
+//*********************************************************************************************
+// Ticker
+
+
+
+
+.ticker p {
+    margin: 0;
+}
+.ticker-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline-start: 10px;
+}
+ 
+.ticker a {
+    font-size: 13px;
+    color: #2c2f34; 
+    white-space: nowrap;
+}
+.ticker a:hover {
+  color: #0669ff;
+}
+  .myticker-cont{
+    .date-urgent{
+        display: flex;
+        align-items: center;
+    }
+    display: grid;
+    gap: 0;
+    grid-template-columns: auto minmax(300px , 85%) ;
+    height: 40px;
+    .date{
+        margin-inline-end: 15px;
+        .icon{
+            font-size: 13px;
+            color: #2c2f34;
+            margin-inline-end: 5px;
+
+        }
+    }
+    .date-text{
+        font-size: 13px;
+        color: #2c2f34;
+        white-space: nowrap;
+    }
+
+    align-items: center;
+    .date{
+        display: flex;
+        align-items: center;
+    }
+  }
+
+  .myticker{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  .urgent-news-text{
+    white-space: nowrap;
+    padding: 6px 5px;
+    font-size: 13px;
+    background-color: var(--red-color);
+    color: #fff;
+    font-weight: 300;
+  }
+ 
+
+
+
+.ticker {
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden
+}
+
+.ticker-content {
+    display: none;
+    left: 10px;
+    line-height: 35px;
+    position: absolute;
+    background-color: #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 10px);
+    width: auto
+}
+
+
+
+
+.ticker-content.is-paused {
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important
+}
+
+.ticker-swipe {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    display: block;
+    width: calc(100% - 10px);
+    height: 35px
+}
+
+.ticker-swipe span {
+    margin-left: 1px;
+    height: 35px;
+    width: 7px;
+    display: block
+}
+
+.ticker-swipe span:after {
+    content: "_";
+    color: #2c2f34; 
+}
+
+.ticker-content,.ticker-swipe {
+    background-color: #ffffff
+}
+
+
+
+
+.ticker-content, .ticker-swipe {
+    left: auto;
+    right: 10px;
+}
+
+html[dir="ltr"]{
+.ticker-content, .ticker-swipe {
+    right: auto;
+    left: 10px;
+}
+
+.breaking-news-nav li.jnt-prev:after , .breaking-news-nav li.jnt-next:after{
+    transform: rotate(180deg);
+}
+
+}
+
+ul.breaking-news-nav li.jnt-prev, ul.breaking-news-nav li.jnt-next {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+
+
+
+.breaking-news-nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    cursor: pointer;
+    height: 21px;
+    width: 21px;
+    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: 0.3s
+}
+.breaking-news-nav li:first-of-type{
+    margin-inline-end: 10px;
+}
+
+
+
+
+.breaking-news-nav li:after {
+    opacity: 0.8;
+    display: inline-block;
+    content: "\f04c";
+    font-family: tiefonticon
+}
+
+.breaking-news-nav li:hover {
+    background-color: #f05555;
+    border-color: #f05555;
+    color: #ffffff
+}
+
+.breaking-news-nav li:hover:after {
+    opacity: 1
+}
+
+.breaking-news-nav li.jnt-prev:after {
+    content: "\f104";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    opacity: .8;
+    font-size: 11px;
+
+
+}
+
+.breaking-news-nav li.jnt-next:after {
+    content: "\f105"; 
+    opacity: .8;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 11px;
+
+}
+
+
+.slider-arrow-nav{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+//*********************************************************************************************
+
+
+
 @include min-768 {
     .account-btn{
         &:hover{
@@ -503,9 +623,6 @@ header{
     .search-parent{
         width: 370px;
     }
-    // .myticker-cont .swiper-parent{
-    //     width: 75%;
-    // }
 }
     
 @include max-992 {
@@ -520,22 +637,43 @@ header{
         width: 115px;
     }
     .main-nav{
-        flex-wrap: wrap;
-        padding: 10px 0 ;
-        .search{
-            order: 3;
-            width: 100%;
-            margin-top: 10px;
-        }
-        }
-        .search-parent{
-            width: 100%;
-        }
+    flex-wrap: wrap;
+    padding: 10px 0 ;
+    .search{
+        order: 3;
+        width: 100%;
+        margin-top: 10px;
+    }
+    }
+    .search-parent{
+        width: 100%;
+    }
+
+
+    .myticker-cont .date{
+        display: none;
+    }
+    .myticker-cont .swiper-parent{
+        width: calc(100% - 85px);
+    }
 }
 
 
 
 @include max-768 {
+     .ticker a {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: unset;
+    }
+
+    .myticker-cont{
+        grid-template-columns : auto minmax(300px, 88%) ;
+        overflow: hidden;
+    }
 
     .home-header{
         border-bottom: var(--nav-border-color) 1px solid;
@@ -709,7 +847,7 @@ border: none;
 inset-inline-start: -100%;
 overflow-y: auto;
 position: fixed;
-left: 0;
+// left: 0;
 // inset: 0;
 padding: 0;
 padding: 20px 0;
@@ -755,7 +893,27 @@ margin-inline-start: 20px;
     align-items: center;
 }
 
+
+.myticker .swiper-button-next, .myticker .swiper-button-prev{
+    display: none;
 }
+.slider-arrow-nav{
+    display: none;
+}
+.urgent-news-text{
+    padding: 5px;
+    font-size: 11px;
+}
+.myticker-cont .swiper-parent{
+    width: calc(100% - 65px);
+}
+
+}
+
+
+
+  
+
 
 
 
@@ -768,16 +926,6 @@ margin-inline-start: 20px;
 .display-none{
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
