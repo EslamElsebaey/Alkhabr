@@ -19,7 +19,7 @@ $(document).ready(function(){
           let dir = document.dir;
           $this.ticker({
             speed       : .2,
-            pauseOnItems : ( $this.data('speed') ) ? $this.data('speed') : 2000,
+            pauseOnItems :  2200,
             fadeInSpeed  : 600,
             fadeOutSpeed : 300,
             controls    : ( $this.data('arrows') ) ? true : false,
@@ -94,7 +94,6 @@ const urgentNews = new Swiper(' .urgent-news .swiper', {
   
     350: {
       slidesPerView: 1,
-      spaceBetween: 15
     },
     
   }
@@ -134,11 +133,10 @@ $(".choosed-country-close").click(function(){
 
 $(".bars").click(function(){
   $("nav").addClass("open-nav");  
-  $("body").removeClass("overflow-hidden") ;
+  $("body").addClass("overflow-hidden") ;
 })
 
 $(".closeBtn").click(function(){
-  console.log(10)
   $("nav").removeClass("open-nav");  
   $("body").removeClass("overflow-hidden") ;
 })
@@ -178,27 +176,27 @@ $(".cancel").click(function(){
 
 // dark mode 
 
-// let darkmodeInput = $(".darkmode-input"); 
-// let logo = $(".header-logo img");
+let darkmodeInput = $(".darkmode-input"); 
+let logo = $(".header-logo img");
 
 
-// if(localStorage.getItem("dark-mode") == "true"){
-//   $("body").addClass("dark-mode") ;
-//   logo.attr("src" , "images/logo-dark.png");
-//   darkmodeInput.prop("checked" , true)
-// }
+if(localStorage.getItem("dark-mode") == "true"){
+  $("body").addClass("dark-mode") ;
+  logo.attr("src" , "images/logo-dark.png");
+  darkmodeInput.prop("checked" , true)
+}
 
 
-// darkmodeInput.change(function(){
-//   $("body").toggleClass("dark-mode") ;
-//  if(this.checked){
-//   localStorage.setItem("dark-mode" , "true") ;
-//   logo.attr("src" , "images/logo-dark.png");
-//  }else{
-//   logo.attr("src" , "images/logo-light.png");
-//   localStorage.setItem("dark-mode" , "false") ;
-//  }
-// })
+darkmodeInput.change(function(){
+  $("body").toggleClass("dark-mode") ;
+ if(this.checked){
+  localStorage.setItem("dark-mode" , "true") ;
+  logo.attr("src" , "images/logo-dark.png");
+ }else{
+  logo.attr("src" , "images/logo-light.png");
+  localStorage.setItem("dark-mode" , "false") ;
+ }
+})
 
 
 
