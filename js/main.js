@@ -1,6 +1,7 @@
 
 $(window).on('load', function() {
   $(".preloader").fadeOut();
+  $(".breaking-news").addClass("display-block")
 });
 
 

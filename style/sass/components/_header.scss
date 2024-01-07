@@ -383,7 +383,7 @@ header{
  
 .ticker a {
     font-size: 13px;
-    color: #2c2f34; 
+    color: var(--ticker-color); 
     white-space: nowrap;
 }
 .ticker a:hover {
@@ -409,7 +409,7 @@ header{
     }
     .date-text{
         font-size: 13px;
-        color: #2c2f34;
+        color: var(--ticker-color);
         white-space: nowrap;
     }
 
@@ -483,11 +483,11 @@ header{
 
 .ticker-swipe span:after {
     content: "_";
-    color: #2c2f34; 
+    color: var(--ticker-color); 
 }
 
 .ticker-content,.ticker-swipe {
-    background-color: #ffffff
+    background-color: var(--white-color)
 }
 
 
@@ -527,6 +527,7 @@ ul.breaking-news-nav li.jnt-prev, ul.breaking-news-nav li.jnt-next {
     align-items: center;
     justify-content: center;
     padding: 0px;
+    background-color: #fff;
     cursor: pointer;
     height: 21px;
     width: 21px;
@@ -577,6 +578,9 @@ ul.breaking-news-nav li.jnt-prev, ul.breaking-news-nav li.jnt-next {
 
 }
 
+.breaking-news{
+    display: none;
+}
 
 .slider-arrow-nav{
     display: flex;

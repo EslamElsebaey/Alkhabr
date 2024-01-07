@@ -4,6 +4,7 @@
 
 :root{
   --red-color : #CF141D ;
+  --ticker-color : #2c2f34
   --blue-color :#143C6D;
   --input-bg-color : #F1F1F1 ;
   --white-color : #fff ;
@@ -42,6 +43,7 @@ body.dark-mode {
   .home-footer{
     background-color: #1a1a1a;
   }
+  --ticker-color : #fff ;
   --red-color : #CF141D ;
   --blue-color :#fff;
   --black-color : #fff;
