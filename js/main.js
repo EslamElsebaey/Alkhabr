@@ -372,12 +372,11 @@ if($(".home-header").length > 0){
      
      if ($(window).scrollTop() > 150) {
          $(".home-header").addClass("fixed");
-         
      } else {
       if($(window).width() > 768){
         $(".home-header").removeClass("fixedHeader-windows");
       }
-         $(".home-header").removeClass("fixed");
+        $(".home-header").removeClass("fixed");
      }
 
      var scrollTop = $(window).scrollTop();

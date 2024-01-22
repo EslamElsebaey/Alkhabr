@@ -4,7 +4,7 @@
 
 :root{
   --red-color : #CF141D ;
-  --ticker-color : #2c2f34
+  --ticker-color : #2c2f34;
   --blue-color :#143C6D;
   --input-bg-color : #F1F1F1 ;
   --white-color : #fff ;
@@ -40,22 +40,22 @@
 
 
 body.dark-mode {
-  background-color: #1a1a1a;
+  
   .home-footer{
-    background-color: #1a1a1a;
+    background-color: #18191a;
   }
   --ticker-color : #fff ;
   --red-color : #CF141D ;
   --blue-color :#fff;
   --black-color : #fff;
-  --banner-sec-bg : #2b2b2b;
+  --banner-sec-bg : #222222;
   --banner-bg : #484848;
   --bookmark-icon : #fff ;
   // --nav-border-color : #464646;
   --nav-border-color : #464646ad;
   --border-color : #5d5d5d ;
   --blue-color : #fff;
-  --white-color : #1a1a1a ;
+  --white-color : #18191a ;
   --check-mark-bgColor : #2A2A2A;
   --post-boxshadow : rgba(255, 255, 255, 0.1); 
   --sideMenu-bgColor : #1e1e1ec7 ;
@@ -288,7 +288,7 @@ nav{
   width: 35px;
   height: 35px;
   // filter: drop-shadow(0 0 12px rgba(0,0,0,0.15));
-  background: rgba($color: #000000, $alpha: .6);
+  background: rgba($color: #000000, $alpha: .8);
   display: flex;
   align-items: center;
   position: fixed;
