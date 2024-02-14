@@ -1094,6 +1094,10 @@ footer {
 }
 .li-drop > a:hover {
   text-decoration: none;
+  color: #CF141D;
+}
+.li-drop > a:hover::after {
+  color: #CF141D;
 }
 .li-drop > a::after {
   content: "\f107";
