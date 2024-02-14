@@ -41,6 +41,9 @@
             transition: all linear .2s;
             &:hover{
                 color: #CF141D;
+                &::after{
+                    color: #CF141D;
+                }
             }
         }
     }

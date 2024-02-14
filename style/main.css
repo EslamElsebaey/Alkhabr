@@ -1089,6 +1089,9 @@ footer {
 .li-drop .ul-drop a:hover {
   color: #CF141D;
 }
+.li-drop .ul-drop a:hover::after {
+  color: #CF141D;
+}
 .li-drop > a {
   color: #fff;
 }
