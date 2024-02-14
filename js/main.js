@@ -7,7 +7,20 @@ $(window).on('load', function() {
 
 $(document).ready(function(){
 
- 
+//  li-drop
+
+  if($(window).width() <= 992) {
+    $(".li-drop > a").click(function (e) {
+      e.preventDefault() ;
+      $(this).siblings(".ul-drop").slideToggle(300) ;
+      $(this).toggleClass("icon-rotate");
+      $(".li-drop a").not($(this)).siblings(".ul-drop").slideUp(300);
+      $(".li-drop a").not($(this)).removeClass("icon-rotate");
+      })
+  }
+
+
+  // ******************************************
 
   // Ticker News
   
