@@ -1066,14 +1066,20 @@ footer {
   position: absolute;
   top: 100%;
   z-index: 11;
-  padding: 12px 15px;
+  padding: 12px;
   opacity: 0;
   visibility: hidden;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .li-drop .ul-drop > li {
   margin: 0;
-  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+.li-drop .ul-drop > li:hover {
+  background-color: #F1F1F1;
+}
+.li-drop .ul-drop > li:hover a {
+  color: #CF141D;
 }
 .li-drop .ul-drop > li:last-of-type {
   border: none;
@@ -1083,6 +1089,7 @@ footer {
   line-height: 27px;
   color: #143C6D;
   font-weight: 400;
+  display: block;
   text-align: right;
   transition: all linear 0.2s;
 }
@@ -1704,7 +1711,7 @@ ul.breaking-news-nav li.jnt-prev, ul.breaking-news-nav li.jnt-next {
     position: static;
     opacity: 1;
     visibility: visible;
-    padding-top: 18px;
+    padding-top: 12px;
     transform: none;
     display: none;
     box-shadow: none;
@@ -1887,6 +1894,12 @@ ul.breaking-news-nav li.jnt-prev, ul.breaking-news-nav li.jnt-next {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+  }
+  .li-drop .ul-drop > li:hover {
+    background-color: unset;
+  }
+  .li-drop .ul-drop > li {
+    padding-inline: 0;
   }
   .bars {
     display: block;
