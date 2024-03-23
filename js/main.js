@@ -192,25 +192,53 @@ $(".cancel").click(function(){
 
 let darkmodeInput = $(".darkmode-input"); 
 let logo = $(".header-logo img");
+let footerTasawkImg = $(".copyright a img");
 
 
 if(localStorage.getItem("dark-mode") == "true"){
   $("body").addClass("dark-mode") ;
   logo.attr("src" , "images/logo-dark.png");
+  if($("html").attr("dir") == "rtl"){
+    footerTasawkImg.attr("src" , "images/tasawk-ar-light.png");
+  }else{
+    footerTasawkImg.attr("src" , "images/tasawk-en-light.png");
+  }
   darkmodeInput.prop("checked" , true)
+  $(".switch-darkmode").prop("checked" , true)
+}else{
+  darkmodeInput.prop("checked" , false)
+  $(".switch-darkmode").prop("checked" , false)
 }
+ 
 
-
-darkmodeInput.change(function(){
+$(".darkmode-input , .switch-darkmode").on("change" , function(){
   $("body").toggleClass("dark-mode") ;
- if(this.checked){
-  localStorage.setItem("dark-mode" , "true") ;
-  logo.attr("src" , "images/logo-dark.png");
- }else{
-  logo.attr("src" , "images/logo-light.png");
-  localStorage.setItem("dark-mode" , "false") ;
- }
+  if(this.checked){
+    if(this.classList[0] == "darkmode-input"){
+      $(".switch-darkmode").prop("checked" , true)
+    }else{
+      $(".darkmode-input").prop("checked" , true)
+    }
+   localStorage.setItem("dark-mode" , "true") ;
+   logo.attr("src" , "images/logo-dark.png");
+   if($("html").attr("dir") == "rtl"){
+     footerTasawkImg.attr("src" , "images/tasawk-ar-light.png");
+   }else{
+     footerTasawkImg.attr("src" , "images/tasawk-en-light.png");
+   }
+  }else{
+   logo.attr("src" , "images/logo-light.png");
+   localStorage.setItem("dark-mode" , "false") ;
+   $(".darkmode-input").prop("checked" , false)
+   if($("html").attr("dir") == "rtl"){
+     footerTasawkImg.attr("src" , "images/tasawk-ar-light.png");
+   }else{
+     footerTasawkImg.attr("src" , "images/tasawk-en-light.png");
+   }
+ 
+  }
 })
+
 
 
 

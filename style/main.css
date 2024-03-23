@@ -58,6 +58,7 @@
   --bookmark-icon: #9B9B9B;
   --input-text-color: #505050 ;
   --input-placeholder-color: #B8B8B8 ;
+  --totop-bgColor: #fff ;
   --input-icons-color: #9093A3;
   --check-mark-bgColor: #E2E2E2;
   --border-color:#E4E4E4 ;
@@ -83,6 +84,7 @@
 body.dark-mode {
   --ticker-color: #fff ;
   --red-color: #CF141D ;
+  --totop-bgColor: #c0c0c0;
   --blue-color:#fff;
   --black-color: #fff;
   --banner-sec-bg: #222222;
@@ -96,7 +98,7 @@ body.dark-mode {
   --post-boxshadow: rgba(255, 255, 255, 0.1);
   --sideMenu-bgColor: #1e1e1ec7 ;
   --input-bg-color: #484848 ;
-  --account-dep-bgColor:#d6e8ff ;
+  --account-dep-bgColor: #0d0d0d ;
   --gray-text-color: #9B9B9B ;
   --gradient-red-bgColor: #ffbbbe ;
   --profile-img-bgColor: #abcfffab ;
@@ -194,6 +196,10 @@ img {
   background-color: var(--white-color);
   transition: all linear 0.5s;
 }
+.fixed .myticker {
+  position: absolute;
+  top: -100%;
+}
 
 .fixedHeader-windows .ul-navbar li .nav-ancor {
   font-size: 14px;
@@ -206,6 +212,10 @@ img {
 }
 .fixedHeader-windows nav {
   padding: 5px 0;
+}
+.fixedHeader-windows .myticker {
+  position: absolute;
+  top: -100%;
 }
 
 .showToTop {
@@ -248,7 +258,7 @@ img {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #E2E2E2;
+  background-color: var(--check-mark-bgColor);
 }
 
 /*preloader*/
@@ -294,7 +304,8 @@ img {
 .toTop {
   width: 35px;
   height: 35px;
-  background: rgba(0, 0, 0, 0.8);
+  filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.15));
+  background: var(--totop-bgColor);
   display: flex;
   align-items: center;
   position: fixed;
@@ -315,7 +326,7 @@ img {
 }
 .toTop .toTop-icon {
   font-size: 16px;
-  color: #fff;
+  color: #000;
   transition: all linear 0.2s;
 }
 
@@ -1022,7 +1033,7 @@ footer {
     position: sticky;
     width: 100%;
     padding: 8px 0px;
-    background-color: #fff;
+    background-color: var(--white-color);
   }
   .country-option img {
     width: 24px;
@@ -1122,10 +1133,6 @@ footer {
 
 .icon-rotate::after {
   transform: rotate(180deg);
-}
-
-nav {
-  padding: 5px 0 !important;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1392,7 +1399,7 @@ header {
 
 nav {
   background-color: var(--white-color);
-  padding: 10px 0;
+  padding: 5px 0;
   border-top: var(--nav-border-color) 1px solid;
   border-bottom: var(--nav-border-color) 1px solid;
 }
@@ -1437,7 +1444,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--white-color);
   border-color: var(--nav-border-color);
   height: 55px;
 }
@@ -1499,7 +1506,7 @@ nav {
 }
 
 .myticker {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--nav-border-color);
 }
 
 .urgent-news-text {
@@ -1886,7 +1893,7 @@ ul.breaking-news-nav li.jnt-prev, ul.breaking-news-nav li.jnt-next {
     width: 100%;
     height: 100vh;
     top: 0;
-    background-color: #fff;
+    background-color: var(--white-color);
   }
   nav .ul-navbar {
     height: 100%;
@@ -3314,7 +3321,7 @@ html[dir=ltr] .post-item .post-title {
 }
 .department-item .department-text {
   font-size: 14px;
-  color: #143C6D;
+  color: var(--blue-color);
   font-weight: 600;
   line-height: 24px;
   transition: ease-in-out 0.2s all;

@@ -13,6 +13,7 @@
   --bookmark-icon : #9B9B9B;
   --input-text-color : #505050 ;
   --input-placeholder-color : #B8B8B8 ;
+  --totop-bgColor : #fff ;
   --input-icons-color :  #9093A3;
   --check-mark-bgColor : #E2E2E2;
   --border-color :#E4E4E4 ;
@@ -46,6 +47,7 @@ body.dark-mode {
   }
   --ticker-color : #fff ;
   --red-color : #CF141D ;
+  --totop-bgColor : #c0c0c0;
   --blue-color :#fff;
   --black-color : #fff;
   --banner-sec-bg : #222222;
@@ -60,7 +62,7 @@ body.dark-mode {
   --post-boxshadow : rgba(255, 255, 255, 0.1); 
   --sideMenu-bgColor : #1e1e1ec7 ;
   --input-bg-color : #484848 ;
-  --account-dep-bgColor :#d6e8ff ;
+  --account-dep-bgColor : #0d0d0d ;
   --gray-text-color : #9B9B9B ;
   // --search-allresources-btnBgColor : #d8d8d8 ;
   --gradient-red-bgColor : #ffbbbe ;
@@ -176,6 +178,10 @@ img {
   z-index: 50;
   background-color: var(--white-color);
   transition: all linear .5s;
+  .myticker{
+    position: absolute;
+    top: -100%;
+  }
 }
 
 .fixedHeader-windows{
@@ -190,6 +196,10 @@ img {
 }
 nav{
     padding: 5px 0;
+}
+.myticker{
+  position: absolute;
+  top: -100%;
 }
 }
 
@@ -241,7 +251,7 @@ nav{
 }
 
 ::-webkit-scrollbar-track{
-  background-color: #E2E2E2;
+  background-color: var(--check-mark-bgColor);
 }
 /*preloader*/
 .preloader {
@@ -287,8 +297,8 @@ nav{
 .toTop{
   width: 35px;
   height: 35px;
-  // filter: drop-shadow(0 0 12px rgba(0,0,0,0.15));
-  background: rgba($color: #000000, $alpha: .8);
+  filter: drop-shadow(0 0 12px rgba(0,0,0,0.15));
+  background:  var(--totop-bgColor);
   display: flex;
   align-items: center;
   position: fixed;
@@ -308,7 +318,7 @@ nav{
   }
   .toTop-icon{
       font-size: 16px;
-      color: #fff;
+      color: #000;
       transition: all linear .2s;
   }
 }
