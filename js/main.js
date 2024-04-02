@@ -2,6 +2,33 @@
 $(window).on('load', function() {
   $(".preloader").fadeOut();
   $(".breaking-news").addClass("display-block")
+
+
+    //  urgentNews swiper
+
+const urgentNews = new Swiper(' .urgent-news .swiper', {
+  loop: true,
+  autoplay : true , 
+  draggable: true,
+  speed : 1000 ,
+  
+  pagination: {
+    el: '.urgent-news .swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.urgent-news .swiper-button-next ',
+    prevEl: '.urgent-news .swiper-button-prev',
+  },
+  breakpoints: {
+  
+    350: {
+      slidesPerView: 1,
+    },
+    
+  }
+});
+
 });
 
 
@@ -87,38 +114,6 @@ otpInput.on("keyup", function (e) {
 
   // **************************************************************************************************
 
-
-
-  //  urgentNews swiper
-
-const urgentNews = new Swiper(' .urgent-news .swiper', {
-  loop: true,
-  // autoplay : true , 
-  draggable: true,
-  
-  pagination: {
-    el: '.urgent-news .swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.urgent-news .swiper-button-next ',
-    prevEl: '.urgent-news .swiper-button-prev',
-  },
-  breakpoints: {
-  
-    350: {
-      slidesPerView: 1,
-    },
-    
-  }
-});
-
-
-
-
-// **************************************************************************************************
-
-
 // open search 
 
 
@@ -129,12 +124,8 @@ $(".open-search-btn").click(function(){
 })
 
 
+  // **************************************************************************************************
 
-
-
-
-
-// **************************************************************************************************
 
 
 // open and close nav
@@ -156,11 +147,6 @@ $(".closeBtn").click(function(){
 })
 
 
-
-// $(".bars").click(function(){
-//   $("nav").addClass("open-nav");  
-//   $("body").addClass("overflow-hidden") ;
-// })
 
 // **************************************************************************************************
 
@@ -326,8 +312,7 @@ if($(".continue-btn-div").length !== 0 && $(".home-footer").length !== 0 ){
 
 if($('.myselect').length > 0){
   $('.myselect').select2();
-  // select arrow rotate
-$(".select2-selection").click(function(){
+  $(".select2-selection").click(function(){
   $(".select2-selection--single").toggleClass("rotate-select-icon");
  })
 
