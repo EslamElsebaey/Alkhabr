@@ -8,7 +8,7 @@ $(window).on('load', function() {
 
 const urgentNews = new Swiper(' .urgent-news .swiper', {
   loop: true,
-  autoplay : true , 
+  autoplay : false , 
   draggable: true,
   speed : 1000 ,
   

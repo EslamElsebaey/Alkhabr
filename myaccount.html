@@ -1,430 +1,387 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <link rel="icon" href="images/fav.png" type="image/webp" />
-   <link rel="stylesheet" href="style/swiper-bundle.min.css">
-      
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style/line-awesome.min.css">
- <link rel="stylesheet" href="style/bootstrap4-rtl.min.css">
-    <link rel="stylesheet" href="style/main.css" />
-   <title>الحساب</title>
-  </head>
 
-  <body>
-       <!-- preloader -->
-       <div class="preloader">
-        <div class="progress">
-          <div class="progress-bar"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="icon" href="images/fav.png" type="image/webp" />
+  <link rel="stylesheet" href="style/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style/line-awesome.min.css">
+  <link rel="stylesheet" href="style/bootstrap4-rtl.min.css">
+  <link rel="stylesheet" href="style/main.css" />
+  <title>الحساب</title>
+</head>
+
+<body>
+  <!-- preloader -->
+  <div class="preloader">
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+  </div>
+  <!-- end preloader -->
+
+
+
+  <!-- header -->
+  <header class="home-header">
+    <div class="myticker">
+      <div class="container">
+        <div class="myticker-cont">
+          <div class="date-urgent">
+            <div class="date">
+              <i class="fa-regular fa-clock icon"></i>
+              <div class="date-text">الإثنين, يناير 1 2024</div>
+            </div>
+            <div class="urgent-news-text">أخبار عاجلة</div>
+          </div>
+          <ul id="breaking-news-in-header" class="breaking-news" data-type="reveal" data-arrows="true">
+            <li class="news-item">
+              <a href="#">
+                التجارة تضبط أكثر من 123 ألف علبة أفياش
+                معدنية مغشوشة بمستودع</a>
+            </li>
+            <li class="news-item">
+              <a href="#">الإمارات تدين الهجوم الإرهابي في كرمان الإيرانية | صحيفة
+                الخليج</a>
+            </li>
+            <li class="news-item">
+              <a href="#">انطلاق بطولة «كيو تور» للسنوكر اليوم | صحيفة الخليج</a>
+            </li>
+            <li class="news-item">
+              <a href="#">كاراتيه الشارقة للمرأة يستأنف تحضيراته للدورة العربية |
+                صحيفة الخليج</a>
+            </li>
+            <li class="news-item">
+              <a href="#">نجاح كبير لسباق نصف ماراثون عجمان | صحيفة الخليج</a>
+            </li>
+            <li class="news-item">
+              <a href="#">راشد بن سعود يتوج «نمر» بخنجر مهرجان أم القيوين للهجن |
+                صحيفة الخليج</a>
+            </li>
+            <li class="news-item">
+              <a href="#">«الشارقة لسباقات الهجن» يبحث خطط الموسم الجديد | صحيفة
+                الخليج</a>
+            </li>
+            <li class="news-item">
+              <a href="#">44 ركلة جزاء في دوري أدنوك.. والحصة الأكبر للشارقة | صحيفة
+                الخليج</a>
+            </li>
+            <li class="news-item">
+              <a href="#">ثاندر يوقف انتصارات سلتيكس | صحيفة الخليج</a>
+            </li>
+            <li class="news-item">
+              <a href="#">645 ألف درهم جوائز الحفل الخامس بمضمار العين | صحيفة
+                الخليج</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <!-- end preloader -->
+    </div>
 
 
-
-      <!-- header -->
-      <header class="home-header">
-        <div class="myticker">
-          <div class="container">
-            <div class="myticker-cont">
-              <div class="date-urgent">
-                <div class="date">
-                  <i class="fa-regular fa-clock icon"></i>
-                  <div class="date-text">الإثنين, يناير 1 2024</div>
-                </div>
-                <div class="urgent-news-text">أخبار عاجلة</div>
-              </div>
-               <ul
-                  id="breaking-news-in-header"
-                  class="breaking-news"
-                  data-type="reveal"
-                  data-arrows="true"
-                >
-                  <li class="news-item">
-                    <a href="#">
-                      التجارة تضبط أكثر من 123 ألف علبة أفياش
-                      معدنية مغشوشة بمستودع</a
-                    >
-                  </li>
-                  <li class="news-item">
-                    <a
-                      href="#"
-                      >الإمارات تدين الهجوم الإرهابي في كرمان الإيرانية | صحيفة
-                      الخليج</a
-                    >
-                  </li>
-                  <li class="news-item">
-                    <a
-                      href="#"
-                      >انطلاق بطولة «كيو تور» للسنوكر اليوم | صحيفة الخليج</a
-                    >
-                  </li>
-                  <li class="news-item">
-                    <a
-                      href="#"
-                      >كاراتيه الشارقة للمرأة يستأنف تحضيراته للدورة العربية |
-                      صحيفة الخليج</a
-                    >
-                  </li>
-                  <li class="news-item">
-                    <a
-                      href="#"
-                      >نجاح كبير لسباق نصف ماراثون عجمان | صحيفة الخليج</a
-                    >
-                  </li>
-                  <li class="news-item">
-                    <a
-                      href="#"
-                      >راشد بن سعود يتوج «نمر» بخنجر مهرجان أم القيوين للهجن |
-                      صحيفة الخليج</a
-                    >
-                  </li>
-                  <li class="news-item">
-                    <a
-                      href="#"
-                      >«الشارقة لسباقات الهجن» يبحث خطط الموسم الجديد | صحيفة
-                      الخليج</a
-                    >
-                  </li>
-                  <li class="news-item">
-                    <a
-                      href="#"
-                      >44 ركلة جزاء في دوري أدنوك.. والحصة الأكبر للشارقة | صحيفة
-                      الخليج</a
-                    >
-                  </li>
-                  <li class="news-item">
-                    <a
-                      href="#"
-                      >ثاندر يوقف انتصارات سلتيكس | صحيفة الخليج</a
-                    >
-                  </li>
-                  <li class="news-item">
-                    <a
-                      href="#"
-                      >645 ألف درهم جوائز الحفل الخامس بمضمار العين | صحيفة
-                      الخليج</a
-                    >
-                  </li>
-                </ul>
-            </div>
-          </div>
-        </div>
-  
-  
-        <div class="container">
-          <div class="main-nav">
-            <div class="header-logo">
-              <a href="home.html"> <img src="images/logo-light.png" alt="" /></a>
-            </div>
-            <div class="search">
-              <div class="search-parent">
-                <input type="text" placeholder="ادخل كلمة البحث" />
-                <i class="las search-icon la-search"></i>
-              </div>
-            </div>
-  
-            <div class="control">
-              <div class="myaccount">
-                <a class="ancor-btn myaccount-anchor" href="myaccount.html">
-                  <i class="las la-user"></i>
-                  حسابى
-                </a>
-              </div>
-              <input
-                type="checkbox"
-                class="darkmode-input"
-                id="darkmode-toggle"
-              />
-              <label for="darkmode-toggle" class="toggle">
-                <span></span>
-              </label>
-  
-              <div class="language">
-                <a class="lang-anchor" href="en.html">English</a>
-              </div>
-              <button class="ancor-btn open-search-btn">
-                <i class="las la-search"></i>
-              </button>
-              <button class="bars ancor-btn"><i class="las la-bars"></i></button>
-            </div>
-          </div>
-        </div>
-        <nav>
-          <div class="container">
-            <div class="lang-close-holder-mob">
-              <button class="closeBtn ancor-btn">
-                <i class="las closeIcon la-times"></i>
-              </button>
-            </div>
-            <div class="mynav">
-              <ul class="ul_ee ul-es ul-navbar">
-                <li><a href="#" class="nav-ancor">الرئيسية</a></li>
-                <li><a href="#" class="nav-ancor">أخبار عالمية </a></li>
-                <li>
-                  <a href="#" class="nav-ancor">أخبار عربية </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-ancor">علوم وتقنية </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-ancor">رياضة </a>
-                </li>
-                <li>
-                <a href="#" class="nav-ancor">اقتصاد </a>
-              </li>
-              <li class="li-drop">
-                <a href="#" class="nav-ancor">اخبار</a>
-                <ul class="ul-drop ul-es">
-                  <li><a class="ancor-btn" href="#"> لوريم ايبسوم </a></li>
-                  <li><a class="ancor-btn" href="#">لوريم ايبسوم </a></li>
-                  <li><a class="ancor-btn" href="#"> لوريم ايبسوم </a></li>
-                  <li><a class="ancor-btn" href="#"> لوريم ايبسوم </a></li>
-                </ul>
-              </li>
-              </ul>
-              <div class="resources-btns-holder">
-                <a
-                  class="add-source-btn myresources-btn ancor-btn"
-                  href="myresources.html"
-                >
-                  <i class="las la-th-large"></i>مصادري
-                </a>
-                <a class="add-source-btn ancor-btn" href="add-resource.html">
-                  <i class="las la-plus"></i>إضافة مصدر</a
-                >
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <!-- end of header -->
-      
-        <!-- bottom header -->
-        <div class="bottom-header">
-        <div class="container">
-            <div class="bottom-header-content">
-            <a class="ancor-btn myaccount-anchor" href="myaccount.html">
-                <i class="las la-user"></i>
-                حسابى
-            </a>
-            <a class="add-source-btn myresources-btn ancor-btn" href="myresources.html"> <i class="las la-th-large"></i>مصادري </a>
-            <a class="add-source-btn ancor-btn" href="add-resource.html"> <i class="las la-plus"></i>إضافة مصدر</a>
-            </div>
-        </div>
-        </div>
-        <!-- bottom header -->
-
-
-
-        <div class="breadcrumb-banner-sec">
-            <section class="banner-950">
-              <div class="container">
-                <a href="#" class="banner">
-                  <span>950 * 90</span>
-                </a>
-              </div>
-            </section>
-           
-               <section class="breadcrumb-sec breadcrumb-container">
-              <div class="container">
-                  <ol class="breadcrumb">
-                  <li class="item-home">
-                      <a class="bread-link bread-home  " href="index.html">الرئيسية </a>
-                  </li>
-                  <li class="active">
-                      <span class="bread-current">    الحساب      </span>
-                  </li>
-                  </ol>
-              </div>
-              </section>  
-        </div>
-        
-
-
-<section class="news myAccount">
     <div class="container">
-       <div class="myaccount-img-div">
+      <div class="main-nav">
+        <div class="header-logo">
+          <a href="home.html"> <img src="images/logo-light.png" alt="" /></a>
+        </div>
+        <div class="search">
+          <div class="search-parent">
+            <input type="text" placeholder="ادخل كلمة البحث" />
+            <i class="las search-icon la-search"></i>
+          </div>
+        </div>
+
+        <div class="control">
+          <div class="myaccount">
+            <a class="ancor-btn myaccount-anchor" href="myaccount.html">
+              <i class="las la-user"></i>
+              حسابى
+            </a>
+          </div>
+          <input type="checkbox" class="darkmode-input" id="darkmode-toggle" />
+          <label for="darkmode-toggle" class="toggle">
+            <span></span>
+          </label>
+
+          <div class="language">
+            <a class="lang-anchor" href="en.html">English</a>
+          </div>
+          <button class="ancor-btn open-search-btn">
+            <i class="las la-search"></i>
+          </button>
+          <button class="bars ancor-btn"><i class="las la-bars"></i></button>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div class="container">
+        <div class="lang-close-holder-mob">
+          <button class="closeBtn ancor-btn">
+            <i class="las closeIcon la-times"></i>
+          </button>
+        </div>
+        <div class="mynav">
+          <ul class="ul_ee ul-es ul-navbar">
+            <li><a href="#" class="nav-ancor">الرئيسية</a></li>
+            <li><a href="category.html" class="nav-ancor">أخبار عالمية </a></li>
+            <li>
+              <a href="#" class="nav-ancor">أخبار عربية </a>
+            </li>
+            <li>
+              <a href="#" class="nav-ancor">علوم وتقنية </a>
+            </li>
+            <li>
+              <a href="#" class="nav-ancor">رياضة </a>
+            </li>
+            <li>
+              <a href="#" class="nav-ancor">اقتصاد </a>
+            </li>
+            <li class="li-drop">
+              <a href="#" class="nav-ancor">اخبار</a>
+              <ul class="ul-drop ul-es">
+                <li><a class="ancor-btn" href="#"> لوريم ايبسوم </a></li>
+                <li><a class="ancor-btn" href="#">لوريم ايبسوم </a></li>
+                <li><a class="ancor-btn" href="#"> لوريم ايبسوم </a></li>
+                <li><a class="ancor-btn" href="#"> لوريم ايبسوم </a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="resources-btns-holder">
+            <a class="add-source-btn myresources-btn ancor-btn" href="myresources.html">
+              <i class="las la-th-large"></i>مصادري
+            </a>
+            <a class="add-source-btn ancor-btn" href="add-resource.html">
+              <i class="las la-plus"></i>إضافة مصدر</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- end of header -->
+
+  <!-- bottom header -->
+  <div class="bottom-header">
+    <div class="container">
+      <div class="bottom-header-content">
+        <a class="ancor-btn myaccount-anchor" href="myaccount.html">
+          <i class="las la-user"></i>
+          حسابى
+        </a>
+        <a class="add-source-btn myresources-btn ancor-btn" href="myresources.html"> <i
+            class="las la-th-large"></i>مصادري </a>
+        <a class="add-source-btn ancor-btn" href="add-resource.html"> <i class="las la-plus"></i>إضافة مصدر</a>
+      </div>
+    </div>
+  </div>
+  <!-- bottom header -->
+
+
+
+  <div class="breadcrumb-banner-sec">
+    <section class="banner-950">
+      <div class="container">
+        <a href="#" class="banner">
+          <span>950 * 90</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="breadcrumb-sec breadcrumb-container">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="item-home">
+            <a class="bread-link bread-home  " href="index.html">الرئيسية </a>
+          </li>
+          <li class="active">
+            <span class="bread-current"> الحساب </span>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </div>
+
+
+
+  <section class="news myAccount">
+    <div class="container">
+      <div class="myaccount-img-div">
         <img class="myaccount-img" src="images/user.jpg" alt="">
         <div class="myaccount-name-cont">
-            <h3 class="myaccount-name">Abdulrahman Mohamed</h3>
-            <a class="ancor-btn edit-account-anchor" href="#">تعديل الحساب</a>
+          <h3 class="myaccount-name">Abdulrahman Mohamed</h3>
+          <a class="ancor-btn edit-account-anchor" href="#">تعديل الحساب</a>
         </div>
-       </div>
+      </div>
 
-       <div class="edit-account-dep">
+      <div class="edit-account-dep">
         <h3 class="title-18">
-            مصادري
+          مصادري
         </h3>
         <div class="department-holder">
-            <a href="#" class="department-item">
-                <div class="dep-name-icon">
-                    <i class="las icon la-history"></i>
-                    <span class="department-text">سجل الأخبار</span>
-                </div>
-              
-            </a>
-            <a href="#" class="department-item">
-                <div class="dep-name-icon">
-                    <i class="las icon la-bookmark"></i>
-                <span class="department-text">الأخبار المفضلة </span>
-                </div>
-                
-            </a>
-        </div>
-       </div>
-       <div class="edit-account-dep">
-        <h3 class="title-18">
-            المصادر الإخبارية
-        </h3>
-        <div class="department-holder">
-            <a href="myresources.html" class="department-item">
-                <div class="dep-name-icon">
-                    <i class="las icon la-th-large"></i>
-                    <span class="department-text"> مصادري</span>
-                </div>
-               
-            </a>
-            <a href="add-resource.html" class="department-item">
-                <div class="dep-name-icon">
-                    <i class="las icon la-folder-plus"></i>
-                    <span class="department-text">اختيار مصادر جديدة  </span>
-                </div>
-               
-            </a>
-            <a href="#" class="department-item">
-                <div class="dep-name-icon">
-                    <i class="las icon la-user-edit"></i>
-                    <span class="department-text">  اقتراح مصدر  </span>
-                </div>
-            </a>
-        </div>
-       </div>
-       <div class="edit-account-dep">
-        <h3 class="title-18">
-            التنبيهات
-        </h3>
-        <div class="department-holder">
-            <div href="#" class="department-item">
-                <div class="dep-name-icon">
-                    <i class="las icon la-bell"></i>
-                    <span class="department-text"> تنبيهات الأخبار العاجلة</span>
-                </div>
-                <input
-                type="checkbox" 
-                class="switch-alarm"
-                id="myswitch">
-                <label for="myswitch" class="toggle">
-                <span></span>
-                </label>
+          <a href="recently-visits.html" class="department-item">
+            <div class="dep-name-icon">
+              <i class="las icon la-history"></i>
+              <span class="department-text">سجل الأخبار</span>
             </div>
-            <a href="breakingNews-notif.html" class="department-item">
-                <div class="dep-name-icon">
-                    <i class="las icon la-plus-circle"></i>
-                    <span class="department-text">اختيار مصادر التنبيهات العاجلة  </span>
-                </div>
-               
-               
-            </a>
-          
-        </div>
-       </div>
-       <div class="edit-account-dep border-none">
-        <h3 class="title-18">
-            تجربة التصفح
-        </h3>
-        <div class="department-holder">
-            <div href="#" class="department-item">
-                <div class="dep-name-icon">
-                    <i class="las icon la-moon"></i>
-                    <span class="department-text"> وضع القراءة الليلية</span>
-                </div>
-                <input
-                type="checkbox" 
-                class="switch-darkmode"
-                id="myswitch-dark">
-                <label for="myswitch-dark" class="toggle">
-                <span></span>
-                </label>
-            </div>
-          
-        </div>
-       </div>
 
-       <div class="delete-logout-sec">
+          </a>
+          <a href="bookmark-posts.html" class="department-item">
+            <div class="dep-name-icon">
+              <i class="las icon la-bookmark"></i>
+              <span class="department-text">الأخبار المفضلة </span>
+            </div>
+
+          </a>
+        </div>
+      </div>
+      <div class="edit-account-dep">
+        <h3 class="title-18">
+          المصادر الإخبارية
+        </h3>
+        <div class="department-holder">
+          <a href="myresources.html" class="department-item">
+            <div class="dep-name-icon">
+              <i class="las icon la-th-large"></i>
+              <span class="department-text"> مصادري</span>
+            </div>
+
+          </a>
+          <a href="add-resource.html" class="department-item">
+            <div class="dep-name-icon">
+              <i class="las icon la-folder-plus"></i>
+              <span class="department-text">اختيار مصادر جديدة </span>
+            </div>
+
+          </a>
+          <a href="#" class="department-item">
+            <div class="dep-name-icon">
+              <i class="las icon la-user-edit"></i>
+              <span class="department-text"> اقتراح مصدر </span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="edit-account-dep">
+        <h3 class="title-18">
+          التنبيهات
+        </h3>
+        <div class="department-holder">
+          <div href="#" class="department-item">
+            <div class="dep-name-icon">
+              <i class="las icon la-bell"></i>
+              <span class="department-text"> تنبيهات الأخبار العاجلة</span>
+            </div>
+            <input type="checkbox" class="switch-alarm" id="myswitch">
+            <label for="myswitch" class="toggle">
+              <span></span>
+            </label>
+          </div>
+          <a href="breakingNews-notif.html" class="department-item">
+            <div class="dep-name-icon">
+              <i class="las icon la-plus-circle"></i>
+              <span class="department-text">اختيار مصادر التنبيهات العاجلة </span>
+            </div>
+
+
+          </a>
+
+        </div>
+      </div>
+      <div class="edit-account-dep border-none">
+        <h3 class="title-18">
+          تجربة التصفح
+        </h3>
+        <div class="department-holder">
+          <div href="#" class="department-item">
+            <div class="dep-name-icon">
+              <i class="las icon la-moon"></i>
+              <span class="department-text"> وضع القراءة الليلية</span>
+            </div>
+            <input type="checkbox" class="switch-darkmode" id="myswitch-dark">
+            <label for="myswitch-dark" class="toggle">
+              <span></span>
+            </label>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="delete-logout-sec">
         <button class="ancor-btn logout-btn">تسجيل خروج</button>
         <button class="ancor-btn delete-acc-btn">حذف الحساب </button>
-       </div>
-     
+      </div>
+
     </div>
 
 
     <div class="logout-overlay">
-        <div class="logout-box">
-            <h4 class="logout-title">تسجيل خروج</h4>
-            <p class="logout-p">هل أنت متأكد أنك تريد تسجيل خروج؟</p>
-            <div class="confirm-delete-div">
-                <button  class="ancor-btn ok" >نعم</button>
-                <button class="ancor-btn cancel" >إلغاء</button>
-            </div>
+      <div class="logout-box">
+        <h4 class="logout-title">تسجيل خروج</h4>
+        <p class="logout-p">هل أنت متأكد أنك تريد تسجيل خروج؟</p>
+        <div class="confirm-delete-div">
+          <button class="ancor-btn ok">نعم</button>
+          <button class="ancor-btn cancel">إلغاء</button>
         </div>
-    </div>
-    <div class="delete-overlay">
-        <div class="logout-box">
-            <h4 class="logout-title">حذف الحساب</h4>
-            <p class="logout-p">هل أنت متأكد أنك تريد حذف الحساب؟ </p>
-            <div class="confirm-delete-div">
-                <button  class="ancor-btn ok" >نعم</button>
-                <button class="ancor-btn cancel" >إلغاء</button>
-            </div>
-        </div>
-    </div>
-  
-   
-
-
-
-</section>
-
-
-
-
-
-<footer class="home-footer">
-  <div class="container">
-    <div class="logo-social">
-      <img class="footer-logo" src="images/logo-dark.png" alt="">
-      <div class="social">
-        <a class="social-anchor" href="#"><i class=" social-icon lab la-instagram"></i></a>
-        <i class=""></i>
-        <a class="social-anchor" href="#"><i class="fa-brands social-icon fa-x-twitter"></i></a>
-        <a class="social-anchor" href="#"><i class="lab la-facebook-f  social-icon"></i></a>
       </div>
     </div>
+    <div class="delete-overlay">
+      <div class="logout-box">
+        <h4 class="logout-title">حذف الحساب</h4>
+        <p class="logout-p">هل أنت متأكد أنك تريد حذف الحساب؟ </p>
+        <div class="confirm-delete-div">
+          <button class="ancor-btn ok">نعم</button>
+          <button class="ancor-btn cancel">إلغاء</button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </section>
+
+
+
+
+
+  <footer class="home-footer">
+    <div class="container">
+      <div class="logo-social">
+        <img class="footer-logo" src="images/logo-dark.png" alt="">
+        <div class="social">
+          <a class="social-anchor" href="#"><i class=" social-icon lab la-instagram"></i></a>
+          <i class=""></i>
+          <a class="social-anchor" href="#"><i class="fa-brands social-icon fa-x-twitter"></i></a>
+          <a class="social-anchor" href="#"><i class="lab la-facebook-f  social-icon"></i></a>
+        </div>
+      </div>
       <div class="footer-cont">
         <span class="download-text">حمل تطبيق الخبر</span>
         <div class="download-images">
           <a href="#"> <img src="images/android_link.png" alt=""></a>
-         <a href="#"> <img src="images/itunes_link.png" alt=""></a>
+          <a href="#"> <img src="images/itunes_link.png" alt=""></a>
         </div>
-       <p class="copyright">
-          موقع الخبر جميع الحقوق محفوظة© 2023    
-        <span> 
-            -  تصميم و تطوير <a href="#"> <img src="images/tasawk-ar-light.png" alt=""></a>
-        </span>
-       </p>
-       <div class="links">
-        <a href="about.html" class="link">من نحن</a>
-        <a href="contact.html" class="link">اتصل بنا</a>
-       </div>
+        <p class="copyright">
+          موقع الخبر جميع الحقوق محفوظة© 2023
+          <span>
+            - تصميم و تطوير <a href="#"> <img src="images/tasawk-ar-light.png" alt=""></a>
+          </span>
+        </p>
+        <div class="links">
+          <a href="about.html" class="link">من نحن</a>
+          <a href="contact.html" class="link">اتصل بنا</a>
+        </div>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 
 
@@ -432,19 +389,20 @@
 
 
 
-<button class="toTop ancor-btn ">
-  <i class="las toTop-icon la-angle-up"></i>
-</button>
+  <button class="toTop ancor-btn ">
+    <i class="las toTop-icon la-angle-up"></i>
+  </button>
 
 
 
 
 
-    <script src="js/jquery-3.7.0.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script> 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/br-news.js"></script>
-    <script src="js/main.js"></script>
+  <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/br-news.js"></script>
+  <script src="js/main.js"></script>
 
-  </body>
+</body>
+
 </html>
